@@ -1,0 +1,65 @@
+<div class="trek-detail-page">
+    <!-- Trek Detail Content -->
+    <div class="container trek-detail">
+        <!-- Header Section -->
+        @if(trail){
+        <div class="trek-detail">
+            <div class="header-image">
+                <img [src]="trail.image" [alt]="trail.name" />
+                <div class="overlay">
+                    <h2>{{ trail.name }}</h2>
+                    <p class="location">{{ trail.location }}</p>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="summary-box">
+                    <h3>Summary</h3>
+                    <p>{{ trail.summary }}</p>
+                </div>
+
+                <div class="detail-section">
+                    <h3>About this Trail</h3>
+                    <p>{{ trail.detail }}</p>
+                </div>
+
+                <div class="info-grid">
+                    <div class="info-card">
+                        <strong>Difficulty</strong>
+                        <p>{{ trail.difficulty }}</p>
+                    </div>
+                    <div class="info-card">
+                        <strong>Duration</strong>
+                        <p>{{ trail.duration }}</p>
+                    </div>
+                    <div class="info-card">
+                        <strong>Best Season</strong>
+                        <p>{{ trail.season }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        }
+        @if(weatherData){
+        <div class="weather-section">
+            <h3>Current Weather in {{ weatherData.location.name }}</h3>
+            <div class="weather-card">
+                <div class="weather-icon">
+                    <img [src]="weatherData.current.weather_icons[0]"
+                        [alt]="weatherData.current.weather_descriptions[0]" />
+                </div>
+                <div class="weather-info">
+                    <h4>{{ weatherData.current.weather_descriptions[0] }}</h4>
+                    <p class="temp">{{ weatherData.current.temperature }}°C</p>
+                    <p>Feels like: {{ weatherData.current.feelslike }}°C</p>
+                    <p>Humidity: {{ weatherData.current.humidity }}%</p>
+                    <p>Wind: {{ weatherData.current.wind_speed }} km/h {{ weatherData.current.wind_dir }}</p>
+                    <p>Visibility: {{ weatherData.current.visibility }} km</p>
+                    <p>UV Index: {{ weatherData.current.uv_index }}</p>
+                </div>
+            </div>
+        </div>
+        }
+
+    </div>
+</div>

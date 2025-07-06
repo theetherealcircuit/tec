@@ -1,0 +1,51 @@
+[
+    {
+        "id": 0,
+        "question": "What should I pack for a multi-day hiking trip?",
+        "answer": "For a multi-day hiking trip, it's essential to pack lightweight gear including a reliable tent, sleeping bag, layered clothing, a first-aid kit, trail food, plenty of water, and navigation tools like a map or GPS. Don’t forget sunscreen and insect repellent!",
+        "tags": [
+            "home",
+            "hiking",
+            "travel"
+        ]
+    },
+    {
+        "id": 1,
+        "question": "Are there beginner-friendly hiking trails available?",
+        "answer": "Absolutely! Many national and regional parks offer beginner-friendly trails that are well-marked, relatively flat, and under 5 km. Always check the trail rating and reviews before heading out.",
+        "tags": [
+            "home",
+            "hiking"
+        ]
+    },
+    {
+        "id": 2,
+        "question": "Can I share my own trail story on this platform?",
+        "answer": "Yes! We welcome and encourage the community to share personal hiking stories, trail experiences, and adventure tips. Simply head over to the 'Community Stories' section and click 'Submit Your Story' to get started.",
+        "tags": [
+            "home",
+            "stories",
+            "community"
+        ]
+    },
+    {
+        "id": 3,
+        "question": "What are the best seasons for hiking in mountainous regions?",
+        "answer": "Spring and autumn are typically the best times to hike in the mountains, offering pleasant temperatures, fewer crowds, and scenic views. However, always check weather conditions and trail accessibility beforehand.",
+        "tags": [
+            "home",
+            "hiking",
+            "seasons"
+        ]
+    },
+    {
+        "id": 4,
+        "question": "How do I stay safe while hiking alone?",
+        "answer": "Let someone know your plans, stay on marked trails, carry emergency supplies, and keep your phone or a GPS tracker with you. Avoid hiking alone at night and trust your instincts at all times.",
+        "tags": [
+            "home",
+            "hiking",
+            "safety"
+        ]
+    }
+]

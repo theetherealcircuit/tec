@@ -1,0 +1,230 @@
+<!-- ============================================================== -->
+<!-- About us -->
+<!-- ============================================================== -->
+<section class="trade-insuance">
+  <div class="container">
+    <div class="col-12">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 order-lg-2 order-1">
+          <div class="w-100 align-items-center justify-content-center">
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-12 about">
+                <h6>About us</h6>
+                <h3>We change the way you do business</h3>
+                <p>Secure business loans, flexible financial services and affordable logistics - SAVE money at every
+                  step!</p>
+                <a class="btn btn-primary m-1" href="{{ externalLinks.contactUs }}">Contact us</a>
+              </div>
+            </div>
+          </div>
+          <div class="rectangle-shape bg-light-blue-3"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================== -->
+<!-- about img section  -->
+<!-- ============================================================== -->
+<section class="about-img">
+  <div class="container py-5">
+    <div class="col-12 p-0">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 order-lg-2 order-1">
+          <img src="/assets/images/about-us.png">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================== -->
+<!-- Our Missions Section  -->
+<!-- ============================================================== -->
+<div class="our-mission">
+  <div class="col-12 p-0">
+    <div class="content banner-wrap py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-12 col-12 mission-content">
+            <h6>Our missions</h6>
+            <h3>To simplify all things trade</h3>
+            <p>Our goal is for everyone to do all things money — spending, saving, investing, borrowing, managing and
+              more — in just a few taps. We’re not there in all markets yet, but it’s only a matter of time And we won’t
+              rest until money everywhere is simplified.</p>
+          </div>
+          <div class="col-md-6 col-sm-12 col-12">
+            <div><img src="/assets/images/our-mission.png"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================== -->
+<!-- Empowering Traders Globally Section  -->
+<!-- ============================================================== -->
+<div class="empowering py-5">
+  <div class="col-12 p-0">
+    <div class="content banner-wrap py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-12 text-center">
+            <h6>Empowering Traders Globally</h6>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-12 col-12 text-center">
+            <div><img src="/assets/images/empowering-1.svg"></div>
+            <h3>1000+</h3>
+            <p>SMEs served & Partnered with DP WorldSMEs & partners served</p>
+          </div>
+
+          <div class="col-md-4 col-sm-12 col-12 text-center">
+            <div><img src="/assets/images/empowering-2.svg"></div>
+            <h3>50m+</h3>
+            <p>Loan disbursed</p>
+          </div>
+
+          <div class="col-md-4 col-sm-12 col-12 text-center">
+            <div><img src="/assets/images/empowering-3.svg"></div>
+            <h3>20+</h3>
+            <p>Offices in U.K, Europe and America</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ============================================================== -->
+<!-- Meet our Global Leadership Section  -->
+<!-- ============================================================== -->
+<div class="team-meet">
+  <div class="col-12 p-0">
+    <div class="content banner-wrap py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-12 leadership text-center">
+            <h6>Meet our global leadership</h6>
+          </div>
+        </div>
+
+        <!-- <div class="row mt-3">
+          <div class="col-md-4 col-sm-12 col-12 founder-img">
+            <div><img src="/assets/images/asit-img.png"></div>
+          </div>
+          <div class="col-md-8 col-sm-12 col-12 leadership-content">
+            <p>Asit is the visionary behind TuningBill, revolutionizing SME (Small and Medium Enterprise) banking. With
+              25+ years in finance, he founded TuningBill in 2019, creating a lean neo-bank. Today, TuningBill powers
+              TradeLyncs' Finance vertical, reshaping SME finance worldwide.
+            </p>
+            <p>TradeLyncs stands out as a global SME ecosystem, with TuningBill's solution at its core. Asit's expertise
+              and academic credentials from LBS and IITD drive innovation, shaping a prosperous future for SMEs.</p>
+            <div class="leadership-title">
+              <h3>Asit Beesen</h3>
+              <div class="small-text-gray">Founder & CEO</div>
+            </div>
+          </div>
+        </div> -->
+
+        <div *ngFor="let leaders of globalLeaderInfo; let i=index" class="row team-member mt-3">
+          <div *ngFor="let leader of leaders; let j=index" class="col-md-4 col-sm-12 col-12">
+            <div class="pointer" data-bs-toggle="modal" data-bs-target="#exampleModal"
+              (click)="openModal(i,j, 'globalLeader')">
+              <div><img [src]="leader.imagePath"></div>
+              <h3>{{leader.fullName}}</h3>
+              <div class="small-text-gray">{{leader.designation}}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================== -->
+<!-- Boards and advisiors Section  -->
+<!-- ============================================================== -->
+<div class="boards">
+  <div class="col-12 p-0">
+    <div class="content banner-wrap py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-12 board-advisor text-center">
+            <h6>Boards and advisors</h6>
+          </div>
+        </div>
+        <div *ngFor="let boardMembers of boardMemberInfo; let i=index" class="row board-member mt-3">
+          <div *ngFor="let boardMember of boardMembers; let j=index" class="col-md-4 col-sm-12 col-12">
+            <div class="pointer" data-bs-toggle="modal" data-bs-target="#exampleModal"
+              (click)="openModal(i,j, 'board')">
+              <div><img [src]="boardMember.imagePath"></div>
+              <h3>{{boardMember.fullName}}</h3>
+              <div class="small-text-gray">{{boardMember.designation}}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================== -->
+<!-- Latest from our team Section  -->
+<!-- ============================================================== -->
+<div class="empowering blogs-empowering">
+  <div class="col-12 p-0">
+    <div class="content banner-wrap py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-12 text-center">
+            <h6>Latest from our team</h6>
+          </div>
+        </div>
+        <div class="row our-team">
+          @for(title of blogTitles; track $index) {
+          <div class="col-md-4 col-sm-12 col-12">
+            <div><img [src]="title.imagePath"></div>
+            <p class="ellipses">{{title.title}}</p>
+            <div class="pointer small-text-primary" (click)="openArticle(title.id)">READ NOW</div>
+          </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal Generic -->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-lg modal-dialog-leader">
+    <div class="modal-content">
+      <div class="modal-header">
+        <i-feather name="x" data-bs-dismiss="modal" aria-label="Close" class="close"></i-feather>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-4 col-sm-12 col-12">
+            <img [src]="memberInfo?.imagePath">
+          </div>
+          <div class="col-md-8 col-sm-12 col-12">
+            <div class="leader-content">
+              <p [innerHTML]="memberInfo?.content">
+              </p>
+              <h4>{{memberInfo?.fullName}}</h4>
+              <h6> {{memberInfo?.designation}} <a [href]="memberInfo?.linkedinUrl" target="_blank"><img
+                    src="/assets/images/linkedin-box-fill.svg"></a>
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

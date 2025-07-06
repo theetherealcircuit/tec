@@ -1,0 +1,33 @@
+/* SCSS Variables */
+
+// Colors
+$mimi-pink: #ffd6ff;
+$mauve: #e7c6ff;
+$mauve-2: #c8b6ff;
+$periwinkle: #b8c0ff;
+$periwinkle-2: #bbd0ff;
+
+// HSL Colors
+$mimi-pink-hsl: hsla(300, 100%, 92%, 1);
+$mauve-hsl: hsla(275, 100%, 89%, 1);
+$mauve-2-hsl: hsla(255, 100%, 86%, 1);
+$periwinkle-hsl: hsla(233, 100%, 86%, 1);
+$periwinkle-2-hsl: hsla(221, 100%, 87%, 1);
+
+// RGB Colors
+$mimi-pink-rgb: rgba(255, 214, 255, 1);
+$mauve-rgb: rgba(231, 198, 255, 1);
+$mauve-2-rgb: rgba(200, 182, 255, 1);
+$periwinkle-rgb: rgba(184, 192, 255, 1);
+$periwinkle-2-rgb: rgba(187, 208, 255, 1);
+
+// Gradients
+$gradient-top: linear-gradient(0deg, $mimi-pink, $mauve, $mauve-2, $periwinkle, $periwinkle-2);
+$gradient-right: linear-gradient(90deg, $mimi-pink, $mauve, $mauve-2, $periwinkle, $periwinkle-2);
+$gradient-bottom: linear-gradient(180deg, $mimi-pink, $mauve, $mauve-2, $periwinkle, $periwinkle-2);
+$gradient-left: linear-gradient(270deg, $mimi-pink, $mauve, $mauve-2, $periwinkle, $periwinkle-2);
+$gradient-top-right: linear-gradient(45deg, $mimi-pink, $mauve, $mauve-2, $periwinkle, $periwinkle-2);
+$gradient-bottom-right: linear-gradient(135deg, $mimi-pink, $mauve, $mauve-2, $periwinkle, $periwinkle-2);
+$gradient-top-left: linear-gradient(225deg, $mimi-pink, $mauve, $mauve-2, $periwinkle, $periwinkle-2);
+$gradient-bottom-left: linear-gradient(315deg, $mimi-pink, $mauve, $mauve-2, $periwinkle, $periwinkle-2);
+$gradient-radial: radial-gradient($mimi-pink, $mauve, $mauve-2, $periwinkle, $periwinkle-2);

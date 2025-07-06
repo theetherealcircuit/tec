@@ -1,0 +1,65 @@
+<!-- ============================================================== -->
+<!-- FAQs Section  -->
+<!-- ============================================================== -->
+<div class="how-it-works">
+  <div class="col-12 p-0">
+    <div class="content banner-wrap py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-12 how-it-works-content text-center">
+            <h6>Adventure Awaits: FAQ Edition</h6>
+            <p>Find the answers to make your journeys even more thrilling.</p>
+            <div class="contracts-content">
+              <!-- ============================================================== -->
+
+              <!-- ============================================================== -->
+              <!-- FAQs Questions -->
+              <!-- ============================================================== -->
+              <div class="contracts-inner-content">
+                <div class="p-4">
+                  <div class="card-body">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                      <div class="accrodion-regular">
+                        <div class="accordion" id="accordion3">
+                          <!-- ============================================================== -->
+                          <!-- FAQs Questions -->
+                          <!-- ============================================================== -->
+                          <div class="traderFaq">
+                            @for (faq of faqList; track $index) {
+                            <div class="mb-3 shadow-none border-0">
+                              <div class="card-header accordion-item" id="'heading'+faq.id">
+                                <h5 class="mb-0 position-relative">
+                                  <a class="btn accrodion-btn-toggle btn-link collapsed d-flex align-items-center font-18"
+                                    type="button" data-bs-toggle="collapse" attr.data-bs-target="#collapse{{faq.id}}"
+                                    aria-expanded="true" attr.aria-controls="collapse{{faq.id}}">
+                                    <span>{{faq.question}}</span>
+                                    <i class="fa"
+                                      [ngClass]="{'fa-plus': isCollapsed(faq.id), 'fa-minus': !isCollapsed(faq.id)}"
+                                      style="margin-left: 10px;"></i>
+                                  </a>
+                                </h5>
+                                <div id="collapse{{faq.id}}" class="accordion-collapse collapse"
+                                  attr.aria-labelledby="heading{{faq.id}}" data-bs-parent="#accordion3">
+                                  <div class="card-body">
+                                    <p [innerHTML]="faq.answer"></p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            }
+                          </div>
+                          <!-- ============================================================== -->
+                          <!-- end FAQs -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

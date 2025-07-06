@@ -1,0 +1,44 @@
+{
+    "Uttarakhand": {
+        "label": "Uttarakhand",
+        "geoJSON": "uttarakhandLow",
+        "treks": [
+            {
+                "name": "Kedarnath Trek",
+                "lat": 30.7346,
+                "lng": 79.0669,
+                "info": "Sacred trail to Kedarnath temple"
+            },
+            {
+                "name": "Valley of Flowers",
+                "lat": 30.7298,
+                "lng": 79.605,
+                "info": "UNESCO site with rich flora"
+            }
+        ]
+    },
+    "Himachal Pradesh": {
+        "label": "Himachal Pradesh",
+        "geoJSON": "himachalPradeshLow",
+        "treks": [
+            {
+                "name": "Triund Trek",
+                "lat": 32.2422,
+                "lng": 76.3213,
+                "info": "Easy trek near Dharamshala"
+            }
+        ]
+    },
+    "Rajasthan": {
+        "label": "Himachal Pradesh",
+        "geoJSON": "himachalPradeshLow",
+        "treks": [
+            {
+                "name": "Triund Trek",
+                "lat": 32.2422,
+                "lng": 76.3213,
+                "info": "Easy trek near Dharamshala"
+            }
+        ]
+    }
+}

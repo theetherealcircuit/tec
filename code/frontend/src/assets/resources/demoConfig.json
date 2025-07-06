@@ -1,0 +1,4 @@
+{
+    "API_ENDPOINT": "https://demo.tuningbill.com/api/",
+    "WEBSOCKET_ENDPOINT": "wss://demo.tuningbill.com/websocket"
+}

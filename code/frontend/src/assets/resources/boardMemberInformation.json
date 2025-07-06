@@ -1,0 +1,85 @@
+{
+    "globalLeaders": [
+        [
+            {
+                "id": 0,
+                "fullName": "Asit Beesen",
+                "designation": "CEO & Founder",
+                "content": "Asit is the visionary behind TuningBill, revolutionizing SME (Small and Medium Enterprise) banking. With 25+ years in finance, he founded TuningBill in 2019, creating a lean neo-bank. Today, TuningBill powers TradeLyncs' Finance vertical, reshaping SME finance worldwide. <br />TradeLyncs stands out as a global SME ecosystem, with TuningBill's solution at its core. Asit's expertise and academic credentials from LBS and IITD drive innovation, shaping a prosperous future for SMEs.",
+                "imagePath": "assets/images/asit-img.png",
+                "linkedinUrl": "https://www.linkedin.com/in/asit-beesen-4397791b/"
+            },
+            {
+                "id": 1,
+                "fullName": "Ken Gacevich",
+                "designation": "Chief Financial Officer",
+                "content": "Ken Gacevich is a seasoned financial leader with a rich background spanning esteemed institutions like Citibank, GE Capital, and Wells Fargo. His journey culminated in a pivotal role as Managing Director at Barings, where he honed his expertise as an investment commitment member for the High Yield team. Currently, as a General Partner at RevTech Labs Capital, Ken drives innovation in venture capital. Alongside his illustrious finance career, Ken embodies an entrepreneurial spirit, having founded and successfully sold a chain of car wash stores, alongside his wife.</p> <p>With a B.S. in Nuclear Engineering from U.C. Berkeley, an M.B.A from Duke University's Fuqua School of Business, and a Chartered Financial Analyst designation, Ken brings a wealth of knowledge and experience to the table. His role as an Early Investor of TradeLyncs underscores his strategic vision and commitment to driving the company's growth and success.",
+                "imagePath": "assets/images/ken-gacevich.png",
+                "linkedinUrl": "https://www.linkedin.com/in/ken-gacevich-6247b310/"
+            },
+            {
+                "id": 2,
+                "fullName": "John Wilson",
+                "designation": "Head Of Credit",
+                "content": "John Wilson serves as Chair of the Credit Committee and Head of Compliance at TuningBill Limited, alongside his role as a Partner at Leela Capital and Consultant at Guild Financial Advisory. With a diverse background, including advisory and investment positions at Zilch, he brings comprehensive expertise to the table. John holds a degree in Philosophy, Politics, and Economics from the University of York.",
+                "imagePath": "assets/images/john.png",
+                "linkedinUrl": "https://www.linkedin.com/in/john-wilson-a4446a1b/"
+            }
+        ],
+        [
+            {
+                "id": 3,
+                "fullName": "Amita Dhand",
+                "designation": "India Head",
+                "content": "Amita Dhand, India Head of TradeLyncs, brings a wealth of experience as a seasoned technologist and entrepreneur with a Master's in Material Science from IIT Delhi. With a significant executive journey starting as a founding member of a fintech startup in 2005, Amita has led various engineering teams and pioneered innovative projects across multiple domains.</p> <p>Her roles, including co-founding TuningBill in 2018, underscore her expertise in developing cutting-edge financial solutions. TuningBill, the company she co-founded, has now been acquired by TradeLyncs, further enhancing her integral role in shaping the company's future. Amita's strategic leadership propels TradeLyncs forward in India, leveraging her extensive track record and visionary approach.",
+                "imagePath": "assets/images/amita.png",
+                "linkedinUrl": "https://www.linkedin.com/in/amitadhand/"
+            },
+            {
+                "id": 4,                
+                "fullName": "Shyam Maurya",
+                "designation": "Technology Advisor",
+                "content": "Shyam is a visionary leader with over 25 years of experience in technology leadership, spanning industries such as finance, mortgage, insurance, logistics, eCommerce, and supply chain. Throughout his career, he has delivered innovative solutions, achieving substantial savings and efficiencies.</p> <p>As the leader of TradeLyncs' technology team, Shyam is reshaping SME finance worldwide. His academic background from IIT Delhi underscores his commitment to excellence, driving innovation and shaping a prosperous future for SMEs.",
+                "imagePath": "assets/images/shyam.png",
+                "linkedinUrl": "https://www.linkedin.com/in/shyam-maurya-02b726/"
+            },
+            {
+                "id": 5,                
+                "fullName": "Hemant Kumar",
+                "designation": "Chief Architect",
+                "content": "Hemant Kumar is the Chief Architect at TuningBill Limited, where he developed the TuningBill application from scratch. He has been with the company since April 2019, playing a pivotal role in designing and implementing backend processes, social media analysis, machine learning, API development, and integrating big data technologies. In addition to his role at TuningBill, Hemant is the Director of Engineering at InfoObjects Inc. He has extensive experience as a Senior Software Engineer at Hoojook, Inc., and has worked on significant projects at HCL Infosystems Ltd., focusing on MongoDB and Apache Solr clusters. Hemant holds a Bachelor of Technology in Computer Science.",
+                "imagePath": "assets/images/hemant.png",
+                "linkedinUrl": "https://in.linkedin.com/in/hemant-kumar-ba278953"
+            }
+        ]
+    ],
+    "boardMembers": [
+        [
+            {
+                "id": 0,
+                "fullName": "Rishi Yadav",
+                "designation": "Advisor Entrepreneur",
+                "content": "TradeLyncs gains from Rishi Yadav's advisory role, leveraging his entrepreneurial acumen and tech expertise. With a Bachelor in Technology from Indian Institute of Technology, Delhi, and leadership at Roost.ai, he offers insights in DevOps automation and AI. His background at InfoObjects Inc. enriches data-driven decision-making, while experience at Netflix, Wells Fargo, and Cisco bolsters strategic planning and operational efficiency.",
+                "imagePath": "assets/images/rishi.png",
+                "linkedinUrl": "https://www.linkedin.com/in/rishiy/"
+            },
+            {
+                "id": 1,
+                "fullName": "Andrew Morozov",
+                "designation": "Investor Entrepreneur",
+                "content": "Andrew Morozov, with an M.S. and Ph.D. in Physics from Moscow Institute of Technology and Physics, and an M.B.A. from Wharton, brings over 25 years of experience. He held senior roles at Fuji-Keizai, IBM Watson, and A.T. Kearney, co-founded successful startups, and managed investments resulting in 12 global exits. His contributions extend to co-authoring patents and scientific publications, showcasing his expertise in innovation. Andrew's dynamic career spans science, industry analysis, management, entrepreneurship, and investment, reflecting a profound commitment to driving impactful change and success in diverse domains.",
+                "imagePath": "assets/images/andrew.png",
+                "linkedinUrl": "https://www.linkedin.com/in/andrew-morozov-ph-d-7a0281/"
+            },
+            {
+                "id": 2,
+                "fullName": "Neeraj Kumar",
+                "designation": "Executive Director",
+                "content": "Neeraj Kumar, an advisor to TradeLyncs, brings 17 years of experience in commodities, spanning investment banking, private equity, and utility trading. Currently, as Head of Structuring and Trading Capability at Uniper, he drives the energy transition through renewable PPAs and hydrogen/ammonia transactions. He has led significant transactions and strategic initiatives across the capital structure and value chain. Neeraj's expertise covers PPAs, Oil & Gas, LNG, Fuel Supply & Energy Management, and Metals & Mining. He previously worked in technology product companies and holds an MBA from London Business School and a BS/MS from IIT Delhi. ",
+                "imagePath": "assets/images/neeraj.png",
+                "linkedinUrl": "https://www.linkedin.com/in/neeraj-kumar-36411b/"
+            }
+            
+        ]
+    ]
+}

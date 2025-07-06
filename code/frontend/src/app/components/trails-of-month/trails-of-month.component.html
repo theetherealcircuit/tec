@@ -1,0 +1,29 @@
+<section class="trail-month-section py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Whispers from the Wild</h2>
+            <p class="">A hidden path. A quiet story. This month’s handpicked trail.</p>
+        </div>
+        <div class="row">
+            @for(card of cards; track card){
+            <div class="col-md-4 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img [attr.src]="card.image" class="card-img-top" [attr.alt]="card.slug">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">{{card.name}}</h5>
+                        <p class="card-text">
+                            {{card.summary}}
+                        </p>
+                        <ul class="list-unstyled mb-3">
+                            <li><strong>🧭 Difficulty:</strong> {{card.difficulty}}</li>
+                            <li><strong>⏱ Duration:</strong> {{card.duration}}</li>
+                            <li><strong>📅 Season:</strong> {{card.season}}</li>
+                        </ul>
+                        <a (click)="gotoTrail(card)" class="btn btn-primary mt-auto">Explore Trail →</a>
+                    </div>
+                </div>
+            </div>
+            }
+        </div>
+    </div>
+</section>

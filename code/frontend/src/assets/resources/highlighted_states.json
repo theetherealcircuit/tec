@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Rajasthan",
+        "highlightColor": "rgba(255, 165, 0, 0.8)",
+        "touristPlaces": [
+            {
+                "name": "Jaipur",
+                "latitude": 26.9124,
+                "longitude": 75.7873,
+                "imageUrl": "assets/icons/jaipur_icon.png"
+            },
+            {
+                "name": "Udaipur",
+                "latitude": 24.5854,
+                "longitude": 73.7125,
+                "imageUrl": "assets/icons/udaipur_icon.png"
+            },
+            {
+                "name": "Jaisalmer",
+                "latitude": 26.9151,
+                "longitude": 70.9099,
+                "imageUrl": "assets/icons/jaisalmer_icon.png"
+            }
+        ]
+    },
+    {
+        "name": "Uttarakhand",
+        "highlightColor": "rgba(0, 128, 0, 0.8)",
+        "touristPlaces": [
+            {
+                "name": "Dehradun",
+                "latitude": 30.3165,
+                "longitude": 78.0322,
+                "imageUrl": "assets/icons/dehradun_icon.png"
+            },
+            {
+                "name": "Rishikesh",
+                "latitude": 30.0903,
+                "longitude": 78.2672,
+                "imageUrl": "assets/icons/rishikesh_icon.png"
+            },
+            {
+                "name": "Nainital",
+                "latitude": 29.3833,
+                "longitude": 79.4667,
+                "imageUrl": "assets/icons/nainital_icon.png"
+            }
+        ]
+    }
+]

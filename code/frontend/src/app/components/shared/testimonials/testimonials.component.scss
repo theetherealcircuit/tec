@@ -1,0 +1,19 @@
+
+.slide {
+    width: 100%; /* Ensure slides fill the container */
+    display: none;
+    object-fit: cover; /* Maintain aspect ratio for images */
+    transition: opacity 0.5s ease-in-out; /* Smooth transitions */
+    opacity: 0; /* Hide initially */
+  }
+  
+  .slide.active {
+    opacity: 1;
+    display: block; /* Show active slide */
+  }
+
+  .slideImg{
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+  }

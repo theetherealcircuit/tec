@@ -1,0 +1,146 @@
+{
+    "Andhra Pradesh": {
+        "theme": "Spiritual & Coastal",
+        "color": "#0077B6"
+    },
+    "Arunachal Pradesh": {
+        "theme": "Himalayan Nature & Monasteries",
+        "color": "#4CAF50"
+    },
+    "Assam": {
+        "theme": "Tea Gardens & Wildlife",
+        "color": "#6D9DC5"
+    },
+    "Bihar": {
+        "theme": "Ancient Heritage (Buddhism)",
+        "color": "#C27BA0"
+    },
+    "Chhattisgarh": {
+        "theme": "Forests & Tribal Culture",
+        "color": "#3E8E7E"
+    },
+    "Goa": {
+        "theme": "Beaches & Parties",
+        "color": "#FF6F61"
+    },
+    "Gujarat": {
+        "theme": "Desert & Heritage",
+        "color": "#F4A261"
+    },
+    "Haryana": {
+        "theme": "Historical & Pilgrimage",
+        "color": "#9C6644"
+    },
+    "Himachal Pradesh": {
+        "theme": "Mountains & Adventure",
+        "color": "#2E8B57"
+    },
+    "Jharkhand": {
+        "theme": "Waterfalls & Forests",
+        "color": "#4C956C"
+    },
+    "Karnataka": {
+        "theme": "Temples & Western Ghats",
+        "color": "#6A0572"
+    },
+    "Kerala": {
+        "theme": "Backwaters & Ayurveda",
+        "color": "#2A9D8F"
+    },
+    "Madhya Pradesh": {
+        "theme": "Wildlife & Heritage",
+        "color": "#8D6E63"
+    },
+    "Maharashtra": {
+        "theme": "Caves & Forts",
+        "color": "#FF8C42"
+    },
+    "Manipur": {
+        "theme": "Lakes & Hills",
+        "color": "#66CDAA"
+    },
+    "Meghalaya": {
+        "theme": "Waterfalls & Caves",
+        "color": "#00CED1"
+    },
+    "Mizoram": {
+        "theme": "Green Hills & Culture",
+        "color": "#3CB371"
+    },
+    "Nagaland": {
+        "theme": "Tribal Festivals",
+        "color": "#556B2F"
+    },
+    "Odisha": {
+        "theme": "Temples & Beaches",
+        "color": "#DAA520"
+    },
+    "Punjab": {
+        "theme": "Spiritual (Golden Temple)",
+        "color": "#FFD700"
+    },
+    "Rajasthan": {
+        "theme": "Desert & Forts",
+        "color": "#E76F51"
+    },
+    "Sikkim": {
+        "theme": "Mountains & Monasteries",
+        "color": "#7FB3D5"
+    },
+    "Tamil Nadu": {
+        "theme": "Temples & Coastal Heritage",
+        "color": "#8E44AD"
+    },
+    "Telangana": {
+        "theme": "Culture & Forts",
+        "color": "#D36AC2"
+    },
+    "Tripura": {
+        "theme": "Palaces & Lakes",
+        "color": "#A3CB38"
+    },
+    "Uttar Pradesh": {
+        "theme": "Spiritual & Heritage (Taj Mahal, Varanasi)",
+        "color": "#FFB347"
+    },
+    "Uttarakhand": {
+        "theme": "Himalayas & Pilgrimage",
+        "color": "#4DB6AC"
+    },
+    "West Bengal": {
+        "theme": "Culture & Sundarbans",
+        "color": "#F67280"
+    },
+    "Andaman and Nicobar Islands": {
+        "theme": "Beaches & Marine Life",
+        "color": "#40E0D0"
+    },
+    "Chandigarh": {
+        "theme": "Modern Architecture",
+        "color": "#B0BEC5"
+    },
+    "Dadra and Nagar Haveli and Daman and Diu": {
+        "theme": "Coastal & Heritage",
+        "color": "#82B1FF"
+    },
+    "Delhi": {
+        "theme": "Capital & Heritage",
+        "color": "#B71C1C"
+    },
+    "Jammu and Kashmir": {
+        "theme": "Snow & Valleys",
+        "color": "#1E90FF"
+    },
+    "Ladakh": {
+        "theme": "Mountains & Monasteries",
+        "color": "#A1887F"
+    },
+    "Lakshadweep": {
+        "theme": "Coral Islands & Beaches",
+        "color": "#00BFA5"
+    },
+    "Puducherry": {
+        "theme": "French Heritage & Beaches",
+        "color": "#F48FB1"
+    }
+}

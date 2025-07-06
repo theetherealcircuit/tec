@@ -1,0 +1,32 @@
+<section class="trail-carousel-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Featured Treks & Trails</h2>
+        <swiper-container #trailSwiper class="mySwiper" space-between="30" centered-slides="false" autoplay-delay="1000"
+            autoplay-disable-on-interaction="false" class="trail-swiper" slides-per-view="3"
+            (mouseenter)="pauseSwiper()" (mouseleave)="resumeSwiper()">
+            @for(trail of featuredTrails; track trail){
+            <swiper-slide>
+                <div class=" card trail-card h-100">
+                    <div class="card-img-container">
+                        <img [src]="trail.image" class="card-img-top" [alt]="trail.name" />
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">{{ trail.name }}</h5>
+                        <p class="card-text">{{ trail.summary }}</p>
+                        <div class="trail-meta d-flex justify-content-between">
+                            <span class="badge bg-trail">{{ trail.duration }}</span>
+                            <span class="badge bg-month">{{ trail.bestMonths }}</span>
+                        </div>
+                        <a (click)="gotoTrail(trail)" class="trail-link mt-2 d-inline-block">
+                            View Details
+                        </a>
+                    </div>
+                </div>
+            </swiper-slide>
+            }
+        </swiper-container>
+        <div class="text-center mt-4">
+            <a class="btn btn-show-more px-4 py-2">Show More Trails</a>
+        </div>
+    </div>
+</section>

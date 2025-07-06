@@ -1,0 +1,186 @@
+<!-- ============================================================== -->
+<!-- Open postions -->
+<!-- ============================================================== -->
+<section class="open-positions">
+    <div class="container">
+        <div class="col-12">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 order-lg-2 order-1">
+                    <div class="w-100 align-items-center justify-content-center">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-12 about">
+                                <h6>Be our</h6>
+                                <h3>{{openPostion?.title}}</h3>
+                                <p>Experience: {{openPostion?.experience}} | Company: {{openPostion?.company}} |
+                                    Location: {{openPostion?.location}} </p>
+                                <a href="javascript:void()" (click)="scrollToId('applyNow')"><button class="btn btn-primary m-1">Apply now</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rectangle-shape bg-light-blue-3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================== -->
+<!-- Career openings Section  -->
+<!-- ============================================================== -->
+<div class="careers-openings">
+    <div class="col-12 p-0">
+        <div class="content banner-wrap py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-12">
+                        <h3>Description</h3>
+                        <p [innerHTML]="openPostion?.jobDescription?.aboutCompany"></p>
+                        <p [innerHTML]="openPostion?.jobDescription?.roleOverview"></p>
+
+                    </div>
+
+                    <div class="col-md-12 col-sm-12 col-12">
+                        <div class="respons">
+                            <h3>Key responsibilities:</h3>
+                            <ul [innerHTML]="openPostion?.jobDescription?.keyResponsibilities">
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 col-sm-12 col-12">
+                        <div class="respons">
+                            <h3>Qualifications:</h3>
+                            <ul [innerHTML]="openPostion?.jobDescription?.qualifications">
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 col-sm-12 col-12">
+                        <div class="respons">
+                            <h3>Benefits:</h3>
+                            <ul [innerHTML]="openPostion?.jobDescription?.benefits">
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 col-sm-12 col-12">
+                        <div class="respons">
+                            <!-- <h3>Description</h3> -->
+                            <p [innerHTML]="openPostion?.jobDescription?.description"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ============================================================== -->
+<!-- Forms postions -->
+<!-- ============================================================== -->
+@if(!submitted) {
+<section class="applicant-form" id="applyNow">
+    <div class="container">
+        <div class="col-12">
+            <div class="row application-form">
+                <div class="offset-lg-2 col-lg-8 offset-md-2 col-md-8 col-sm-12">
+                    <div class="w-100 align-items-center justify-content-center">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-12 text-center">
+                                <h3>Fill up the following application form</h3>
+                            </div>
+                        </div>
+                        <form class="form-container" name="frmInfo" id="frmInfo">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 col-12">
+                                    <div class="form-row">
+                                        <div class="form-group col-md-12 col-sm-12 col-12">
+                                            <label>First name*</label>
+                                            <input class="form-control form-control-lg" type="text" name="firstName"
+                                                autocomplete="off" />
+                                        </div>
+
+                                        <div class="form-group col-md-12 col-sm-12 col-12">
+                                            <label>Last name*</label>
+                                            <input class="form-control form-control-lg" type="text" name="lastName"
+                                                autocomplete="off" />
+                                        </div>
+
+                                        <div class="form-group col-md-12 col-sm-12 col-12">
+                                            <label>Email address*</label>
+                                            <input class="form-control form-control-lg" type="text" name="emailAdress"
+                                                autocomplete="off" />
+                                        </div>
+
+                                        <div class="form-group col-md-12 col-sm-12 col-12">
+                                            <label>Phone</label>
+                                            <input class="form-control form-control-lg" type="text" name="phone"
+                                                autocomplete="off" />
+                                        </div>
+
+                                        <div class="form-group col-md-12 col-sm-12 col-12">
+                                            <label>LinkedIn profile</label>
+                                            <input class="form-control form-control-lg" type="text"
+                                                name="linkedInProfile" autocomplete="off" />
+                                        </div>
+
+                                        <div class="form-group col-md-12 col-sm-12 col-12">
+                                            <label>GitHub</label>
+                                            <input class="form-control form-control-lg" type="text" name="gitHub"
+                                                autocomplete="off" />
+                                        </div>
+
+                                        <div class="form-group col-md-12 col-sm-12 col-12">
+                                            <label>Upload CV</label>
+                                            <input class="form-control form-control-lg" type="file" name="Upload CV"
+                                                placeholder="Select PDF" autocomplete="off" />
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-12 col-sm-12 col-12 text-center">
+                                    <button class="btn btn-primary m-1" (click)="submitApplication()">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="rectangle-shape bg-light-blue-3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+}
+
+
+
+<!-- ============================================================== -->
+<!-- Forms postions -->
+<!-- ============================================================== -->
+@if(submitted) {
+<section class="applicant-form" id="applyNow">
+    <div class="container">
+        <div class="col-12">
+            <div class="row application-form">
+                <div class="offset-lg-2 col-lg-8 offset-md-2 col-md-8 col-sm-12">
+                    <div class="w-100 align-items-center justify-content-center">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-12 text-center">
+                                <img src="/assets/images/check-line-blue.svg">
+                                <h2>Application received</h2>
+                                <p>Thank you for showing your interest. <br>
+                                    Will get back to you shortly to know you better if your profile gets shortlisted.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rectangle-shape bg-light-blue-3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+}

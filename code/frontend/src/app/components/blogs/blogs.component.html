@@ -1,0 +1,66 @@
+<!-- ============================================================== -->
+<!-- Career Section  -->
+<!-- ============================================================== -->
+
+<router-outlet></router-outlet>
+
+@if(!hasChildren){
+<div class="blogs">
+  <div class="col-12">
+    <div class="content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-12">
+            <h1>Blogs</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="col-12">
+  <div class="content blogOne">
+    <div class="row">
+      <div class="col-md-6 col-sm-12 col-12 blogs-img">
+        <img src="/assets/images/blog-new-img-1.png">
+      </div>
+
+      <div class="col-md-6 col-sm-12 col-12 blogs-content">
+        <div>
+          <button class="btn btn-primary-light">Case study</button>
+          <h3>Revolutionizing Global Supply Chains with TradeLyncs' AI/ML Assisted Platform</h3>
+          <p>In an era where efficiency and adaptability reign supreme, the global supply chain landscape faces
+            unprecedented challenges. Traditional methods struggle to keep pace with the demands of a rapidly evolving
+            market, leaving businesses vulnerable to disruptions and inefficiencies....</p>
+          <div class="case-study"> <a href="javascript:void(0)" (click)="openArticle(blogTitles[0].id)">View case study</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+}
+
+
+<!-- ============================================================== -->
+<!-- Latest from our team Section  -->
+<!-- ============================================================== -->
+<div class="empowering blogs-empowering">
+  <div class="col-12 p-0">
+    <div class="content banner-wrap py-5">
+      <div class="container">
+        <div class="row our-team">
+          @for(title of blogTitles; track $index) {
+          <div class="col-md-4 col-sm-12 col-12">
+            <div><img [src]="title.imagePath"></div>
+            <p class="ellipses">{{title.title}}</p>
+            <div class="pointer small-text-primary mb-3" (click)="openArticle(title.id)">READ NOW</div>
+          </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

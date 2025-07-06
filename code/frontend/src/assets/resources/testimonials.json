@@ -1,0 +1,22 @@
+{
+    "communityStories": [
+        {
+            "id": 1,
+            "title": "Conquering the Valley of Shadows",
+            "excerpt": "An unforgettable journey through the misty peaks and quiet forests...",
+            "author": "Aisha N."
+        },
+        {
+            "id": 2,
+            "title": "Finding Peace on the Summit",
+            "excerpt": "After weeks of hustle, this trek brought me calm and clarity...",
+            "author": "Ravi M."
+        },
+        {
+            "id": 3,
+            "title": "Solo Trails and Silent Nights",
+            "excerpt": "A solo hiking experience that redefined courage for me..",
+            "author": "Lena S."
+        }
+    ]
+}

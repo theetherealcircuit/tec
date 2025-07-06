@@ -1,0 +1,92 @@
+<!-- ============================================================== -->
+<!-- Article Section  -->
+<!-- ============================================================== -->
+<div class="article">
+  @if(articleId==blog4Id){
+     <!-- ============================================================== -->
+<!-- Blog Banner Section  -->
+<!-- ============================================================== -->
+<section>
+        <div class="row">
+          <div class="col-md-6 col-sm-12 col-12 dashboard-img">
+            <img src="/assets/images/blog-bg.png">
+          </div>
+          <div class="col-md-6 col-sm-12 col-12 blog-banner">
+            <div class="banner-content">
+            <h1>Get <span class="text-yellow">Free Business Accounts</span> with TradeLyncs now</h1>
+            <p>Tailored Solutions for Your Business Needs</p>
+            <div class="get-btn">
+              <button class="btn btn-light" (click)="openLink('signup')">Get started</button>
+            </div>
+            </div>
+          </div>
+        </div>
+</section>
+  } @else {
+    <img src="{{ blogImagePath}}" />
+  }
+</div>
+
+<!-- ============================================================== -->
+<!-- Why is battery analytics important? section  -->
+<!-- ============================================================== -->
+<section class="article-box" id="article">
+  <div class="article-box-content container">
+    <div class="col-12">
+      <div class="content">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-12 col-12 article-content">
+              <div class="row">
+                <div class="col-md-12 col-sm-12 col-12">
+                  <button class="btn btn-primary-light">
+                    Battery analytics
+                  </button>
+                  <h3>{{ blogTitle }}</h3>
+                  <div class="article-img">
+                    <img src="/assets/images/article-line.svg" />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 col-sm-12 col-12">
+                  <div class="article-name">
+                    <div>
+                      <p>Asit Beesen</p>
+                      <div class="small-text-gray">{{ dateOfPublish }}</div>
+                    </div>
+                    <div class="article-icons">
+                      <a href="https://www.linkedin.com/company/tradelyncs" target="_blank"
+                        ><img src="/assets/images/linkdin-article.svg"
+                      /></a>
+                      <a href="https://x.com/tradelyncs" target="_blank"
+                        ><img src="/assets/images/twitter-article.svg"
+                      /></a>
+                      <a href="https://www.facebook.com/people/TradeLyncs/61560479977632/" target="_blank"
+                        ><img src="/assets/images/article-3.svg"
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12 col-12"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container article-box-content2">
+    <div class="col-12 p-0">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 order-lg-2 order-1">
+          <div class="article-descriptions">
+            <h3>{{ blogTitle }}</h3>
+            <p [innerHTML]="blogContent"></p>
+          </div>
+          <div class="rectangle-shape bg-light-blue-3"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
