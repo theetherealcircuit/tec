@@ -44,7 +44,7 @@ $link-hover: #D18C56; // Amber Gold (hover color for a touch of brightness)
 $btn-primary-bg: $primary;
 $btn-primary-text: #F8F8F3; // Powder White (light text on buttons)
 $btn-secondary-bg: $secondary;
-$btn-secondary-text: #2F3C29; // Deep Pine (dark text for secondary buttons)
+$btn-secondary-text: #F8F8F3; // Deep Pine (dark text for secondary buttons)
 $btn-hover-bg: #D18C56; // Amber Gold for hover (to highlight user interaction)
 
 
@@ -1640,66 +1640,15 @@ header {
             }
         }
 
-        .floating-elements {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            z-index: 1;
-            pointer-events: none;
-
-            img.floating {
-                position: absolute;
-                width: 40px;
-                opacity: 0.7;
-                animation: float 6s ease-in-out infinite;
-
-                &.leaf {
-                    top: 6%;
-                    left: 4%;
-                    animation: floatRotate 6s ease-in-out infinite;
-                }
-
-                &.compass {
-                    bottom: 5%;
-                    left: 12%;
-                    animation: spin 12s linear infinite;
-                }
-
-                &.bird {
-                    top: 10%;
-                    right: 8%;
-                    animation: flap 4s ease-in-out infinite;
-                }
-
-                &.flower {
-                    bottom: 15%;
-                    left: 18%;
-                    animation: pulse 3s ease-in-out infinite;
-                }
-
-                &.mountain {
-                    bottom: 5%;
-                    right: 10%;
-                }
-
-                &.star {
-                    top: 5%;
-                    right: 15%;
-                    animation: twinkle 3s ease-in-out infinite;
-                }
-            }
-        }
-
         .parallax-layer-1 {
             position: absolute;
             bottom: 0;
             width: 100%;
             height: 100%;
-            content: url(../../images/banner/forest-2.jpg);
+            content: url(../../images/banner/banner_1.jpg);
             background-size: contain;
             animation: parallaxMove 60s linear infinite;
             z-index: 0;
-            opacity: 0.3;
         }
 
         .parallax-layer-2 {
@@ -1707,11 +1656,10 @@ header {
             bottom: 0;
             width: 100%;
             height: 100%;
-            content: url(../../images/banner/mountain.jpg);
+            content: url(../../images/banner/banner_2.jpg);
             background-size: contain;
             animation: parallaxMove 60s linear infinite;
             z-index: 0;
-            opacity: 0.3;
         }
 
         .parallax-layer-3 {
@@ -1719,29 +1667,37 @@ header {
             bottom: 0;
             width: 100%;
             height: 100%;
-            content: url(../../images/banner/village.jpg);
+            content: url(../../images/banner/banner_3.jpg);
             background-size: contain;
             animation: parallaxMove 60s linear infinite;
             z-index: 0;
-            opacity: 0.3;
+        }
+
+        .parallax-layer-4 {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            content: url(../../images/banner/banner-4.jpg);
+            background-size: contain;
+            animation: parallaxMove 60s linear infinite;
+            z-index: 0;
+        }
+
+        .parallax-layer-5 {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            content: url(../../images/banner/banner-5.jpg);
+            background-size: contain;
+            animation: parallaxMove 60s linear infinite;
+            z-index: 0;
         }
     }
 
     // Slide Backgrounds
-    .slide-1 {
-        background-color: #2F3C29;
-        padding-top: 8%;
-    }
 
-    .slide-2 {
-        background-color: #3E4C3A;
-        padding-top: 8%;
-    }
-
-    .slide-3 {
-        background-color: #4E5B3A;
-        padding-top: 8%;
-    }
 
     .hero-map {
         position: absolute;
@@ -1884,6 +1840,166 @@ header {
         transition: 0.3s ease;
     }
 }
+
+//story modal
+
+.story-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.story-container {
+    width: 350px;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.story-content {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    flex: 1;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    inset: 0;
+}
+
+.caption-box {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+
+    h2 {
+        font-size: 22px;
+        margin-bottom: 10px;
+        color: #fff !important;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .details-link {
+        display: inline-block;
+        margin-top: 12px;
+        color: #B7D3A8;
+        /* or your secondary color */
+        text-decoration: underline;
+        font-weight: 500;
+        transition: color 0.3s ease;
+    }
+
+    .details-link:hover {
+        color: #D18C56;
+        cursor: pointer;
+        /* hover color */
+    }
+}
+
+.progress-bar-wrapper {
+    display: flex;
+    gap: 5px;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.progress-segment {
+    flex: 1;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 2px;
+    overflow: hidden;
+
+    .progress-fill {
+        height: 100%;
+        background-color: white;
+        transition: width 0.1s linear;
+    }
+}
+
+.nav-button {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    color: black;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10000;
+    border-radius: 50%;
+
+    &.left {
+        left: 30%;
+    }
+
+    &.right {
+        right: 30%;
+    }
+
+    i-feather {
+        width: 18px;
+        height: 18px;
+        stroke: black;
+        /* or any color you want */
+    }
+}
+
+.close-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    z-index: 10000;
+}
+
+@media (max-width: 768px) {
+    .story-modal {
+        width: 100vw;
+    }
+
+    .story-caption {
+        h4 {
+            font-size: 18px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+    .nav-button {
+        padding: 8px;
+        font-size: 18px;
+    }
+
+    .close-button {
+        font-size: 16px;
+        padding: 6px;
+    }
+}
+
+
 
 
 

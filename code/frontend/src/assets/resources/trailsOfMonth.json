@@ -1,77 +1,76 @@
 {
     "cards": [
         {
-            "name": "Tungnath & Chandrashila",
-            "slug": "tungnath",
-            "location": "Uttarakhand",
-            "image": "assets/images/tungnath.jpg",
-            "summary": "Highest Shiva temple trek with Himalayan views.",
+            "name": "The Astral Heritage Circuit",
+            "image": "assets/images/astral_heritage_main.jpg",
+            "summary": "This journey is where stone meets stardust—where heritage doesn’t stand still, it orbits through time.",
             "detail": "The trek to Tungnath and Chandrashila offers a spiritual and scenic journey through the Garhwal Himalayas. Starting from Chopta, this moderate trail winds through dense forests and alpine meadows before reaching Tungnath — the world’s highest Shiva temple. A further ascent to Chandrashila summit rewards trekkers with a breathtaking panoramic view of snow-capped Himalayan peaks including Nanda Devi, Trishul, and Kedarnath. This trek is ideal for beginners and nature lovers.",
-            "difficulty": "Moderate",
-            "duration": "2 Days (~10 km total)",
-            "season": "April – November",
-            "link": "/trails/tungnath"
+            "link": "/trails/tungnath",
+            "stories": [
+                {
+                    "image": "assets/images/astral_heritage_story_1.jpg",
+                    "caption": "From rocket launches to celestial temples—explore India’s cosmic legacy.",
+                    "heading": "Where Stone Meets Space"
+                },
+                {
+                    "image": "assets/images/astral_heritage_story_2.jpg",
+                    "caption": "Journey through ISRO’s launchpads and star-mapped shrines.",
+                    "heading": "India’s Skyward Soul"
+                },
+                {
+                    "image": "assets/images/astral_heritage_story_3.jpg",
+                    "caption": "Discover how temple science and space tech trace the same stars.",
+                    "heading": "Ancient Equations, Modern Missions"
+                }
+            ]
         },
         {
-            "name": "Badrinath – Valley of Devotion",
-            "slug": "badrinath",
-            "location": "Uttarakhand",
-            "image": "assets/images/badrinath.jpg",
-            "summary": "A sacred journey to a revered Himalayan temple.",
-            "detail": "Badrinath, one of the Char Dham pilgrimage sites, is nestled in the Nar-Narayan mountain ranges beside the Alaknanda River. This spiritual destination attracts thousands each year with its divine aura, natural beauty, and the iconic Badrinath Temple dedicated to Lord Vishnu. While most of the route is motorable, short nature walks around the area reveal hot springs, peaceful riverside ghats, and snow-capped views. Whether for devotion or exploration, Badrinath offers an unforgettable blend of faith and serenity.",
-            "difficulty": "Easy",
-            "duration": "1–2 Days (motorable with short walks)",
-            "season": "May – October",
-            "link": "/trails/badrinath"
+            "name": "The Backwaters Circuit",
+            "image": "assets/images/backwater_circuit_main.jpg",
+            "summary": "Glide through Kerala's emerald veins aboard traditional houseboats, where Chinese fishing nets dance with tides and spice gardens breathe stories of merchant sailors.",
+            "detail": "The trek to Tungnath and Chandrashila offers a spiritual and scenic journey through the Garhwal Himalayas. Starting from Chopta, this moderate trail winds through dense forests and alpine meadows before reaching Tungnath — the world’s highest Shiva temple. A further ascent to Chandrashila summit rewards trekkers with a breathtaking panoramic view of snow-capped Himalayan peaks including Nanda Devi, Trishul, and Kedarnath. This trek is ideal for beginners and nature lovers.",
+            "link": "/trails/tungnath",
+            "stories": [
+                {
+                    "image": "assets/images/backwater_circuit_story_1.jpg",
+                    "caption": "Houseboats, spice trails, and lagoon dreams stitched by coir.",
+                    "heading": "Float Through Kerala’s Heart"
+                },
+                {
+                    "image": "assets/images/backwater_circuit_story_2.jpg",
+                    "caption": "Meet fishermen, blend spices, and sway to the backwater rhythm.",
+                    "heading": "Where Waters Tell Stories"
+                },
+                {
+                    "image": "assets/images/backwater_circuit_story_3.jpg",
+                    "caption": "Drift, discover, and give back in Kerala’s green embrace.",
+                    "heading": "Lagoon Life, Slow & Soulful"
+                }
+            ]
         },
         {
-            "name": "Kedarnath Trek",
-            "slug": "kedarnath",
-            "location": "Uttarakhand",
-            "image": "assets/images/kedarnath.jpg",
-            "summary": "Pilgrimage trek to Kedarnath Temple.",
-            "detail": "The Kedarnath trek is a spiritually uplifting trail that takes you to one of the holiest shrines in India — the Kedarnath Temple. Located at 11,755 feet, the temple stands amid the dramatic backdrop of snow-covered peaks and the Mandakini River. The 16 km trek from Gaurikund is steep yet scenic, with a mix of pine forests, waterfalls, and open meadows. It’s best attempted between May and October when weather conditions are favorable.",
-            "difficulty": "Moderate",
-            "duration": "2 Days (16 km trek)",
-            "season": "May – October",
-            "link": "/trails/kedarnath",
-            "routeCoordinates": [
-                [
-                    30.7453,
-                    79.0203
-                ],
-                [
-                    30.7380,
-                    79.0310
-                ],
-                [
-                    30.7250,
-                    79.0450
-                ],
-                [
-                    30.7100,
-                    79.0580
-                ],
-                [
-                    30.6950,
-                    79.0680
-                ],
-                [
-                    30.6750,
-                    79.0750
-                ],
-                [
-                    30.7350,
-                    79.0700
-                ]
-            ],
-            "center": [
-                30.7350,
-                79.0700
-            ],
-            "zoom": 12,
-            "color": "green",
-            "weight": 4
+            "name": "The Hampi Circuit",
+            "image": "assets/images/hampi_circuit_main.jpg",
+            "summary": "Travel through time where empires once danced with divinity.",
+            "detail": "The trek to Tungnath and Chandrashila offers a spiritual and scenic journey through the Garhwal Himalayas. Starting from Chopta, this moderate trail winds through dense forests and alpine meadows before reaching Tungnath — the world’s highest Shiva temple. A further ascent to Chandrashila summit rewards trekkers with a breathtaking panoramic view of snow-capped Himalayan peaks including Nanda Devi, Trishul, and Kedarnath. This trek is ideal for beginners and nature lovers.",
+            "link": "/trails/tungnath",
+            "stories": [
+                {
+                    "image": "assets/images/hampi_circuit_story_1.jpg",
+                    "caption": "Walk through ruins where gods and kings once ruled.",
+                    "heading": "Whispers of the Lost Empire"
+                },
+                {
+                    "image": "assets/images/hampi_circuit_story_2.jpg",
+                    "heading": "Carved in Stone, Etched in Time",
+                    "caption": "Discover legends sculpted into cave walls and temple stones."
+                },
+                {
+                    "image": "assets/images/hampi_circuit_story_3.jpg",
+                    "heading": "Myths You Can Touch",
+                    "caption": "Experience epics through archaeology, iconography, and storytelling."
+                }
+            ]
         }
     ]
 }

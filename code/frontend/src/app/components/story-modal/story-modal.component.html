@@ -1,0 +1,32 @@
+<div id="storyModal" class="story-backdrop">
+    <div class="story-container">
+        <!-- Progress Bar -->
+        <div class="progress-bar-wrapper">
+            <div *ngFor="let story of stories; let i = index" class="progress-segment">
+                <div class="progress-fill" [style.width.%]="progressPercents[i]"></div>
+            </div>
+        </div>
+
+        <!-- Background Image + Overlay -->
+        <div class="story-content" [ngStyle]="{ 'background-image': 'url(' + stories[currentIndex]?.image + ')' }">
+            <div class="overlay"></div>
+            <div class="caption-box">
+                <h2>{{ stories[currentIndex]?.heading }}</h2>
+                <p>{{ stories[currentIndex]?.caption }}</p>
+                <a [routerLink]="stories[currentIndex].detailsLink" class="details-link">
+                    Take Me There
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Controls -->
+    <div class="nav-button left" (click)="prevStory()">
+        <i-feather name="ChevronLeft" class="me-3"></i-feather>
+    </div>
+    <div class="nav-button right" (click)="nextStory()">
+        <i-feather name="ChevronRight" class="chevron-right"></i-feather>
+    </div>
+    <div class="close-button" (click)="closeStory()"> <i-feather name="x" data-bs-dismiss="modal" aria-label="Close"
+            class="close"></i-feather></div>
+</div>

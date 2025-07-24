@@ -21,19 +21,33 @@
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" [ngClass]="{'active' : currentTab == 'partners'}"
                   href="javascript:void(0)" role="button">
-                  Services
+                  Travel circuits
                 </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="javascript:void(0)" [routerLink]="['/brokers']"
-                      data-bs-toggle="collapse" data-bs-target="#navbarNav">Experiences</a></li>
+                      data-bs-toggle="collapse" data-bs-target="#navbarNav">Signature circuits</a></li>
+                  <!-- <li><a class="dropdown-item" href="javascript:void(0)" [routerLink]="['/suppliers']"
+                      data-bs-toggle="collapse" data-bs-target="#navbarNav">Walking</a></li> -->
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" [ngClass]="{'active' : currentTab == 'partners'}"
+                  href="javascript:void(0)" role="button">
+                  Experiences
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="javascript:void(0)" [routerLink]="['/brokers']"
+                      data-bs-toggle="collapse" data-bs-target="#navbarNav">Artistic</a></li>
                   <li><a class="dropdown-item" href="javascript:void(0)" [routerLink]="['/suppliers']"
-                      data-bs-toggle="collapse" data-bs-target="#navbarNav">Walking</a></li>
+                      data-bs-toggle="collapse" data-bs-target="#navbarNav">Earth & Sky</a></li>
+                  <li><a class="dropdown-item" href="javascript:void(0)" [routerLink]="['/suppliers']"
+                      data-bs-toggle="collapse" data-bs-target="#navbarNav">Spritual</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" [ngClass]="{'active' : currentTab == 'company'}"
                   href="javascript:void(0)" role="button">
-                  Company
+                  More
                 </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="javascript:void(0)" [routerLink]="['/about-us']"
@@ -41,7 +55,7 @@
                   <li><a class="dropdown-item" [routerLink]="['/contact-us']" [href]="externalLinks.contactUs">Contact
                       us</a></li>
                   <li><a class="dropdown-item" href="javascript:void(0)" [routerLink]="['/careers']"
-                      data-bs-toggle="collapse" data-bs-target="#navbarNav">Careers</a></li>
+                      data-bs-toggle="collapse" data-bs-target="#navbarNav">Join us</a></li>
                   <li><a class="dropdown-item" href="javascript:void(0)" [routerLink]="['/blogs']"
                       data-bs-toggle="collapse" data-bs-target="#navbarNav">Blogs</a></li>
                 </ul>

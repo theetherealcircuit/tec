@@ -12,12 +12,12 @@ import { UtilsService } from '../../../utils/utils.service';
   styleUrl: './open-positions.component.scss'
 })
 export class OpenPositionsComponent implements OnInit {
-  @Input('id') id:string|null= '';
+  @Input('id') id: string | null = '';
   openPostion: { title: string; experience: string; location: string; company: string; id: string; type: string; jobDescription: { aboutCompany: string; roleOverview: string; keyResponsibilities: string; qualifications: string; benefits: string; description: string; }; } | undefined;
   submitted: boolean = false;
 
-  private utilsService: UtilsService= inject(UtilsService); 
-  private route: ActivatedRoute= inject(ActivatedRoute);
+  private utilsService: UtilsService = inject(UtilsService);
+  private route: ActivatedRoute = inject(ActivatedRoute);
 
   ngOnInit() {
     this.route.paramMap.subscribe((params: ParamMap) => {
@@ -36,7 +36,7 @@ export class OpenPositionsComponent implements OnInit {
     this.utilsService.scrollToTop();
   }
 
-  scrollToId(elementId: string){
+  scrollToId(elementId: string) {
     this.utilsService.scrollToId(elementId);
   }
 }

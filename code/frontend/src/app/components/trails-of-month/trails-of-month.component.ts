@@ -2,9 +2,10 @@ import { Component, OnInit, inject } from '@angular/core';
 import { cards } from '../../../assets/resources/trailsOfMonth.json';
 import { LocalStorageService } from '../../services/local-storage.service';
 import { Router } from '@angular/router';
+import { TrialofMonthDependency } from './trails-of-month.dependency';
 @Component({
   selector: 'app-trails-of-month',
-  imports: [],
+  imports: [TrialofMonthDependency],
   templateUrl: './trails-of-month.component.html',
   styleUrl: './trails-of-month.component.scss'
 })
@@ -17,8 +18,14 @@ export class TrailsOfMonthComponent implements OnInit {
 
   }
 
-  gotoTrail(trail: any) {
-    this.localStorage.set('trail', trail);
-    this.router.navigate(['/trail-details']);
+
+  activeCard: any = null;
+
+  gotoTrail(card: any) {
+    this.activeCard = card;
+  }
+
+  closeStory() {
+    this.activeCard = null;
   }
 }
