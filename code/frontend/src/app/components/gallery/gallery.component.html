@@ -6,13 +6,13 @@
             <div class="media-wrapper">
                 @if(isImage(item.image)){
                 <ng-container>
-                    <img [src]="item.image" [alt]="item.title" />
+                    <img [src]="item.image | mediaUrl" [alt]="item.title" />
                 </ng-container>
                 }
 
                 @if(isVideo(item.image)){
                 <ng-container>
-                    <video [src]="item.image" autoplay loop [muted]="true" playsinline preload="metadata">
+                    <video [src]="item.image | mediaUrl" autoplay loop [muted]="true" playsinline preload="metadata">
                     </video>
                 </ng-container>
                 }

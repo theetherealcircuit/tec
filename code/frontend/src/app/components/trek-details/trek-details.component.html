@@ -5,7 +5,7 @@
         @if(trail){
         <div class="trek-detail">
             <div class="header-image">
-                <img [src]="trail.image" [alt]="trail.name" />
+                <img [src]="trail.image | mediaUrl" [alt]="trail.name" />
                 <div class="overlay">
                     <h2>{{ trail.name }}</h2>
                     <p class="location">{{ trail.location }}</p>
@@ -45,7 +45,7 @@
             <h3>Current Weather in {{ weatherData.location.name }}</h3>
             <div class="weather-card">
                 <div class="weather-icon">
-                    <img [src]="weatherData.current.weather_icons[0]"
+                    <img [src]="'weatherData.current.weather_icons[0]' | mediaUrl"
                         [alt]="weatherData.current.weather_descriptions[0]" />
                 </div>
                 <div class="weather-info">

@@ -8,7 +8,8 @@
         </div>
 
         <!-- Background Image + Overlay -->
-        <div class="story-content" [ngStyle]="{ 'background-image': 'url(' + stories[currentIndex]?.image + ')' }">
+        <div class="story-content"
+            [ngStyle]="{ 'background-image': 'url(' + (stories[currentIndex]?.image | mediaUrl) + ')' }">
             <div class="overlay"></div>
             <div class="caption-box">
                 <h2>{{ stories[currentIndex]?.heading }}</h2>

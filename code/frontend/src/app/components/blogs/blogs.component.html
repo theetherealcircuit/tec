@@ -3,7 +3,7 @@
   <div class="blog-list">
     @for(blog of blogs;track blog){
     <div class="blog-card">
-      <img [src]="blog.image" alt="{{ blog.title }}" class="blog-image" />
+      <img [src]="blog.image | mediaUrl" alt="{{ blog.title }}" class="blog-image" />
       <div class="blog-content">
         <h3>{{ blog.title }}</h3>
         <p>{{ blog.tagline }}</p>

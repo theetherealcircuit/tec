@@ -3,11 +3,12 @@ import { Component, ElementRef, OnInit, SimpleChanges, ViewChild, inject } from 
 import { LocalStorageService } from '../../services/local-storage.service';
 import * as L from 'leaflet';
 import { ExternalApiService } from '../../services/externalApis.service';
+import { SharedDependencies } from '../shared/shared.dependency';
 declare var google: any;
 
 @Component({
   selector: 'app-trek-details',
-  imports: [],
+  imports: [SharedDependencies],
   templateUrl: './trek-details.component.html',
   styleUrl: './trek-details.component.scss'
 })

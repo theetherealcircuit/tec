@@ -1,125 +1,46 @@
 <section class="hero-section" style="position: relative;">
-    <!-- <ngb-carousel [interval]="7000" [pauseOnHover]="false" [showNavigationArrows]="false"
-        [showNavigationIndicators]="false">
-
-        <ng-template ngbSlide>
-            <div class="hero-slide slide-1">
-                <div class="parallax-layer-1"></div>
-                <div class="floating-elements">
-                    <img src="assets/images/banner/leaf.svg" class="floating leaf">
-                    <img src="assets/images/banner/compass.svg" class="floating compass">
-                </div>
-                <div class="hero-content">
-                    <h1>What We Do</h1>
-                    <p>
-                        We curate spiritual, adventurous and rural journeys across India's most sacred and scenic
-                        locations.
-                        Every trek tells a story — from the Himalayas to heritage trails.
-                    </p>
-                </div>
-            </div>
-        </ng-template>
-
-        <ng-template ngbSlide>
-            <div class="hero-slide slide-2">
-                <div class="parallax-layer-2"></div>
-                <div class="floating-elements">
-                    <img src="assets/images/banner/bird.svg" class="floating bird">
-                    <img src="assets/images/banner/star.svg" class="floating star">
-                </div>
-                <div class="hero-content">
-                    <h1>How the Map Works</h1>
-                    <ul class="map-steps">
-                        <li>🗺️ Highlighted states represent themed travel zones</li>
-                        <li>📍 Clickable pins show active trails or destinations</li>
-                        <li>📖 Click on a pin to view detailed trek information</li>
-                    </ul>
-                </div>
-            </div>
-        </ng-template>
-
-        <ng-template ngbSlide>
-            <div class="hero-slide slide-3">
-                <div class="parallax-layer-3"></div>
-                <div class="floating-elements">
-                    <img src="assets/images/banner/flower.svg" class="floating flower">
-                    <img src="assets/images/banner/mountain.svg" class="floating mountain">
-                </div>
-                <div class="hero-content">
-                    <h1>Let's Begin the Journey</h1>
-                    <p>Ready to explore sacred trails and hidden gems?</p>
-                    <button class="contact-btn">Contact Us</button>
-                </div>
-            </div>
-        </ng-template>
-
-    </ngb-carousel>
-
-    <div class="hero-map">
-        <div id="chartdiv" class="map-container"></div>
-    </div> -->
 
     <ngb-carousel [interval]="7000" [pauseOnHover]="false" [showNavigationArrows]="false"
         [showNavigationIndicators]="false">
 
         <ng-template ngbSlide>
             <div class="hero-slide slide-1">
-                <div class="parallax-layer-1"></div>
-                <!-- <div class="hero-content">
-                    <h1>What We Do</h1>
-                    <p>
-                        We curate spiritual, adventurous and rural journeys across India's most sacred and scenic
-                        locations.
-                        Every trek tells a story — from the Himalayas to heritage trails.
-                    </p>
-                </div> -->
+                <div class="parallax-layer-1"
+                    [ngStyle]="{ 'background-image': 'url(' + ('banner/banner_1.jpg' | mediaUrl) + ')' }">
+                </div>
+
             </div>
         </ng-template>
 
         <ng-template ngbSlide>
             <div class="hero-slide slide-2">
-                <div class="parallax-layer-2"></div>
-                <!--  <div class="hero-content">
-                    <h1>How the Map Works</h1>
-                  <ul class="map-steps">
-                        <li>🗺️ Highlighted states represent themed travel zones</li>
-                        <li>📍 Clickable pins show active trails or destinations</li>
-                        <li>📖 Click on a pin to view detailed trek information</li>
-                    </ul> 
-                </div>-->
+                <div class="parallax-layer-2"
+                    [ngStyle]="{ 'background-image': 'url(' + ('banner/banner_2.jpg' | mediaUrl) + ')' }">
+                </div>
             </div>
         </ng-template>
 
         <ng-template ngbSlide>
             <div class="hero-slide slide-3">
-                <div class="parallax-layer-3"></div>
-                <!-- <div class="hero-content">
-                    <h1>Let's Begin the Journey</h1>
-                    <p>Ready to explore sacred trails and hidden gems?</p>
-                    <button class="contact-btn">Contact Us</button>
-                </div> -->
+                <div class="parallax-layer-3"
+                    [ngStyle]="{ 'background-image': 'url(' + ('banner/banner_3.jpg' | mediaUrl) + ')' }">
+                </div>
             </div>
         </ng-template>
 
         <ng-template ngbSlide>
             <div class="hero-slide slide-4">
-                <div class="parallax-layer-4"></div>
-                <!-- <div class="hero-content">
-                    <h1>Let's Begin the Journey</h1>
-                    <p>Ready to explore sacred trails and hidden gems?</p>
-                    <button class="contact-btn">Contact Us</button>
-                </div> -->
+                <div class="parallax-layer-4"
+                    [ngStyle]="{ 'background-image': 'url(' + ('banner/banner_4.jpg' | mediaUrl) + ')' }">
+                </div>
             </div>
         </ng-template>
 
         <ng-template ngbSlide>
             <div class="hero-slide slide-5">
-                <div class="parallax-layer-5"></div>
-                <!-- <div class="hero-content">
-                    <h1>Let's Begin the Journey</h1>
-                    <p>Ready to explore sacred trails and hidden gems?</p>
-                    <button class="contact-btn">Contact Us</button>
-                </div> -->
+                <div class="parallax-layer-5"
+                    [ngStyle]="{ 'background-image': 'url(' + ('banner/banner_5.jpg' | mediaUrl) + ')' }">
+                </div>
             </div>
         </ng-template>
 

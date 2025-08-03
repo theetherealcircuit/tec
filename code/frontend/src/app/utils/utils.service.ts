@@ -1,9 +1,9 @@
 import { DOCUMENT, ViewportScroller } from "@angular/common";
 import { EXTERNAL_LINKS } from "../services/external-links.service";
-import { environment } from "../environments/environment";
 import { Inject, Injectable } from "@angular/core";
 import { Router } from "@angular/router";
 import { CookieService } from "ngx-cookie-service";
+import { environment } from "../../environments/environment";
 
 
 @Injectable({

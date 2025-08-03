@@ -8,7 +8,7 @@
             <swiper-slide>
                 <div class=" card trail-card h-100">
                     <div class="card-img-container">
-                        <img [src]="trail.image" class="card-img-top" [alt]="trail.name" />
+                        <img [src]="trail.image | mediaUrl" class="card-img-top" [alt]="trail.name" />
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">{{ trail.name }}</h5>

@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import galleryData from '../../../assets/resources/gallery.json';
+import { SharedDependencies } from '../shared/shared.dependency';
 @Component({
   selector: 'app-gallery',
-  imports: [],
+  imports: [SharedDependencies],
   templateUrl: './gallery.component.html',
   styleUrl: './gallery.component.scss'
 })

@@ -5,11 +5,12 @@ import { EXTERNAL_LINKS } from '../../../services/external-links.service';
 import { UtilsService } from '../../../utils/utils.service';
 import { NgbCarouselConfig, NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import { filter } from 'rxjs/operators';
+import { SharedDependencies } from '../shared.dependency';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule, RouterModule],
+  imports: [SharedDependencies],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })

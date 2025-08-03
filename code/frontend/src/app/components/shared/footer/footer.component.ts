@@ -3,11 +3,12 @@ import { EXTERNAL_LINKS } from '../../../services/external-links.service';
 import { UtilsService } from '../../../utils/utils.service';
 import { RouterModule } from '@angular/router';
 import { FeatherModule } from 'angular-feather';
+import { SharedDependencies } from '../shared.dependency';
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [FeatherModule, RouterModule],
+  imports: [SharedDependencies],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss'
 })

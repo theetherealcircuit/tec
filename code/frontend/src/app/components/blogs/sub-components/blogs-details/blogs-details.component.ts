@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import blogsData from '../../../../../assets/resources/blogs.json';
 import { UtilsService } from '../../../../utils/utils.service';
+import { SharedDependencies } from '../../../shared/shared.dependency';
 
 @Component({
   selector: 'app-blogs-details',
-  imports: [],
+  imports: [SharedDependencies],
   templateUrl: './blogs-details.component.html',
   styleUrl: './blogs-details.component.scss'
 })
