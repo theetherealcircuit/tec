@@ -1,51 +1,122 @@
 [
     {
         "id": 0,
-        "question": "What should I pack for a multi-day hiking trip?",
-        "answer": "For a multi-day hiking trip, it's essential to pack lightweight gear including a reliable tent, sleeping bag, layered clothing, a first-aid kit, trail food, plenty of water, and navigation tools like a map or GPS. Don’t forget sunscreen and insect repellent!",
+        "question": "What is The Ethereal Circuit?",
+        "answer": "A living classroom. A conscious journey. We design soulful travel circuits where learning meets exploration — where you touch the roots of culture, nature, and yourself.",
         "tags": [
             "home",
-            "hiking",
+            "about",
             "travel"
         ]
     },
     {
         "id": 1,
-        "question": "Are there beginner-friendly hiking trails available?",
-        "answer": "Absolutely! Many national and regional parks offer beginner-friendly trails that are well-marked, relatively flat, and under 5 km. Always check the trail rating and reviews before heading out.",
+        "question": "What makes TEC different from any other travel company?",
+        "answer": "We don’t do tours. We curate experiences. You don’t just visit places — you listen, build, sketch, plant, and reconnect. Every circuit is deeply local, learning-driven, and regenerative.",
         "tags": [
             "home",
-            "hiking"
+            "about",
+            "experience"
         ]
     },
     {
         "id": 2,
-        "question": "Can I share my own trail story on this platform?",
-        "answer": "Yes! We welcome and encourage the community to share personal hiking stories, trail experiences, and adventure tips. Simply head over to the 'Community Stories' section and click 'Submit Your Story' to get started.",
+        "question": "Who can join your circuits?",
+        "answer": "Curious souls of all ages — students, educators, families, explorers. If you love stories, discovery, and being part of something meaningful, you belong here.",
         "tags": [
             "home",
-            "stories",
+            "about",
             "community"
         ]
     },
     {
         "id": 3,
-        "question": "What are the best seasons for hiking in mountainous regions?",
-        "answer": "Spring and autumn are typically the best times to hike in the mountains, offering pleasant temperatures, fewer crowds, and scenic views. However, always check weather conditions and trail accessibility beforehand.",
+        "question": "What kind of workshops do you offer?",
+        "answer": "Workshops that ground you. Pottery with village artisans. Fossil hunts with experts. Astronomy nights under real skies. Forest bathing and nature journaling. Heritage sketching and mural-making. You learn through your hands, heart, and senses — not just through books.",
         "tags": [
             "home",
-            "hiking",
-            "seasons"
+            "workshops",
+            "education"
         ]
     },
     {
         "id": 4,
-        "question": "How do I stay safe while hiking alone?",
-        "answer": "Let someone know your plans, stay on marked trails, carry emergency supplies, and keep your phone or a GPS tracker with you. Avoid hiking alone at night and trust your instincts at all times.",
+        "question": "Are these educational trips or vacations?",
+        "answer": "They are both. Each circuit sparks wonder, teaches gently, and restores joy — without ever feeling like school or a checklist.",
         "tags": [
             "home",
-            "hiking",
-            "safety"
+            "education",
+            "travel"
+        ]
+    },
+    {
+        "id": 5,
+        "question": "Do TEC experiences help the local community?",
+        "answer": "Yes — deeply. We co-create with locals, pay fairly, stay local, and reinvest into education, ecology, and craft. Every circuit gives back — quietly, respectfully.",
+        "tags": [
+            "home",
+            "community",
+            "impact"
+        ]
+    },
+    {
+        "id": 6,
+        "question": "Is TEC safe for children and elders?",
+        "answer": "Absolutely. Each journey is planned with care, guided with warmth, and supported by experts. Everyone feels seen, heard, and at ease.",
+        "tags": [
+            "home",
+            "safety",
+            "family"
+        ]
+    },
+    {
+        "id": 7,
+        "question": "How do I join a circuit?",
+        "answer": "DM us, message, or visit our website. We’ll guide you from there. No complicated forms — just real conversations.",
+        "tags": [
+            "home",
+            "about",
+            "join"
+        ]
+    },
+    {
+        "id": 8,
+        "question": "Can schools or colleges collaborate with you?",
+        "answer": "Yes — we love to co-create. We design circuits with educators that go far beyond classrooms — skill-building, heritage walks, eco-workshops, community actions.",
+        "tags": [
+            "home",
+            "education",
+            "collaboration"
+        ]
+    },
+    {
+        "id": 9,
+        "question": "How long are your circuits?",
+        "answer": "From 1-day immersions to 10-day odysseys. Each circuit flows with the land, the story, and the soul of the place.",
+        "tags": [
+            "home",
+            "travel",
+            "duration"
+        ]
+    },
+    {
+        "id": 10,
+        "question": "Is TEC a sustainable travel company?",
+        "answer": "We go beyond sustainability. We believe in regeneration — healing what’s broken, reviving what’s fading, honoring what’s ancient.",
+        "tags": [
+            "home",
+            "sustainability",
+            "impact"
+        ]
+    },
+    {
+        "id": 11,
+        "question": "Why is it called The Ethereal Circuit?",
+        "answer": "Because we believe travel should feel light, meaningful, and unforgettable. A circuit, not a straight line — where you return changed, and the world is better for it.",
+        "tags": [
+            "home",
+            "about",
+            "philosophy"
         ]
     }
 ]

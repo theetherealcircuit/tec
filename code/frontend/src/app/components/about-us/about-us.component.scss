@@ -1,0 +1,69 @@
+:host {
+    display: block;
+    background-color: #F7F2E6; // Sunlit Beige
+    color: #4E5B3A; // Olive Brown
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.8;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+h1,
+h2,
+h3 {
+    color: #3E4C3A; // Mossy Gray
+    font-family: 'Georgia', serif;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 60px;
+    color: #D18C56; // Amber Gold
+}
+
+section {
+    margin-bottom: 60px;
+    padding: 40px;
+    border-left: 6px solid #9C8365; // Warm Taupe
+    background-color: #EAF0DC; // Soft Sage
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(160, 130, 90, 0.1);
+}
+
+.founding-story {
+    background-color: #F1EBDB;
+    border-color: #D18C56;
+}
+
+.team-section {
+    background-color: #D9D4B8;
+    border-color: #B3C77C;
+}
+
+.highlight {
+    color: #9C8365; // Warm Taupe
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.4rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    section {
+        padding: 20px;
+    }
+}

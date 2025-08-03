@@ -3,8 +3,6 @@ import { UtilsService } from '../../utils/utils.service';
 import { AboutUsModule } from './about-us.dependency';
 import { CommonModule } from '@angular/common';
 import { Router, RouterModule } from '@angular/router';
-import boardMembersJson from '../../../assets/resources/boardMemberInformation.json';
-import blogs from '../../../assets/resources/blogs.json';
 import { EXTERNAL_LINKS } from '../../services/external-links.service';
 
 @Component({
@@ -28,9 +26,7 @@ export class AboutUsComponent implements OnInit {
 
   }
   ngOnInit() {
-    this.globalLeaderInfo = boardMembersJson.globalLeaders;
-    this.boardMemberInfo = boardMembersJson.boardMembers;
-    this.initializeBlogs();
+    this.utilService.scrollToTop();
   }
 
   openModal(i: number, j: number, type: string) {
@@ -41,9 +37,6 @@ export class AboutUsComponent implements OnInit {
     }
   }
 
-  initializeBlogs() {
-    this.blogTitles = blogs.blogContents;
-  }
 
   openArticle(articleId: any) {
     this.router.navigate(['/blogs', articleId]);

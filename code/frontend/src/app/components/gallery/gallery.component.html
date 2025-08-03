@@ -1,0 +1,32 @@
+<section class="gallery-section">
+    <h2 class="gallery-heading">Wander Through Our Trails</h2>
+    <div class="gallery-grid">
+        @for(item of items; track item){
+        <div class="gallery-card">
+            <div class="media-wrapper">
+                @if(isImage(item.image)){
+                <ng-container>
+                    <img [src]="item.image" [alt]="item.title" />
+                </ng-container>
+                }
+
+                @if(isVideo(item.image)){
+                <ng-container>
+                    <video [src]="item.image" autoplay loop [muted]="true" playsinline preload="metadata">
+                    </video>
+                </ng-container>
+                }
+                @if(isNEF(item.image)){
+                <ng-container>
+                    <div class="nef-fallback">
+                        <p>{{ item.title }} (NEF format)</p>
+                        <small>Preview not supported here</small>
+                    </div>
+                </ng-container>
+                }
+            </div>
+        </div>
+        }
+
+    </div>
+</section>

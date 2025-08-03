@@ -20,6 +20,7 @@ export class ContactUsComponent implements OnInit {
   }
   ngOnInit(): void {
     this.buildContactForm();
+    this.utilService.scrollToTop();
   }
 
   buildContactForm() {

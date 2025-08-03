@@ -2,7 +2,7 @@ import { Component, OnInit, inject } from '@angular/core';
 import { UtilsService } from '../../utils/utils.service';
 import { Router, RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import blogs from '../../../assets/resources/blogs.json';
+import blogsData from '../../../assets/resources/blogs.json';
 import { RouterService } from '../../services/router.service';
 
 @Component({
@@ -13,7 +13,7 @@ import { RouterService } from '../../services/router.service';
   styleUrl: './blogs.component.scss'
 })
 export class BlogsComponent implements OnInit {
-  blogTitles: any[]= [];
+  blogTitles: any[] = [];
   hasChildren: boolean = false;
   routerService: RouterService = inject(RouterService);
   constructor(
@@ -22,18 +22,12 @@ export class BlogsComponent implements OnInit {
   ) {
 
   }
-  ngOnInit() {
-    this.routerService.hasChildren.subscribe(hasChildren => {this.hasChildren = hasChildren});
-    this.initializeBlogs();
-  }
+  blogs: any[] = [];
 
-  initializeBlogs() {
-    this.blogTitles = blogs.blogContents;
-  }
-
-  openArticle(articleId: any) {
-    this.router.navigate(['/blogs', articleId]);
+  ngOnInit(): void {
     this.utilService.scrollToTop();
+    this.blogs = blogsData;
   }
+
 
 }
