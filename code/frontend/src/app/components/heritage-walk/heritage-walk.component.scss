@@ -1,0 +1,216 @@
+$primary: #B7D3A8;
+$secondary: #D18C56;
+$accent-2: #E1D79B;
+$accent-3: #F1EBDB;
+
+$text-dark: #3E4C3A;
+$text-muted: #7A8A6B;
+$text-light: #F8F8F3;
+$bg-light: #F7F2E6;
+
+/* HERO */
+.heritage-hero {
+    height: 65vh;
+    width: 100%;
+    //   background-image: url('/assets/heritage/heritage_walk.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 45%;
+
+    .overlay_bg {
+        position: absolute;
+        inset: 0;
+        // background: rgba(0, 0, 0, 0.45);
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        color: $text-light;
+        padding-top: 130px;
+
+        h1 {
+            font-size: 3.2rem;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+    }
+}
+
+/* ACCORDION */
+.walk-accordion {
+    width: 90%;
+    margin: 40px auto;
+}
+
+.accordion-item {
+    background: #ffffff;
+    border-radius: 14px;
+    margin-bottom: 18px;
+    border: 1px solid #e0e0e0;
+    overflow: hidden;
+    transition: 0.3s;
+
+    &.open {
+        border-color: $secondary;
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.accordion-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 16px;
+    cursor: pointer;
+    position: relative;
+
+    .thumb {
+        width: 80px;
+        height: 70px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .info {
+        flex: 1;
+
+        h3 {
+            margin: 0;
+            color: $text-dark;
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+
+        .teaser {
+            margin: 4px 0 0;
+            color: $text-muted;
+            font-size: 0.95rem;
+        }
+    }
+
+    .coming-soon {
+        background: $secondary;
+        color: $text-light;
+        padding: 5px 12px;
+        border-radius: 6px;
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+
+    .arrow {
+        font-size: 1.4rem;
+        transition: 0.3s ease;
+    }
+
+    .rotate {
+        transform: rotate(180deg);
+    }
+}
+
+/* BODY */
+.accordion-body {
+    padding: 18px 20px 28px;
+    background: rgba(247, 242, 230, 0.55);
+}
+
+/* Zig-Zag inside accordion */
+.custom-accordion .accordion-item {
+    background: $bg-light;
+    border: 1px solid $accent-3;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+
+/* Header */
+.accordion-button {
+    background: $primary;
+    color: $text-dark;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.thumb {
+    width: 70px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid $secondary;
+}
+
+/* Coming Soon */
+.coming-soon {
+    background: $secondary;
+    padding: 4px 10px;
+    color: $text-light;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* Body */
+.accordion-body.glass {
+    background: rgba(255, 255, 255, 0.45);
+    border-left: 4px solid $secondary;
+    backdrop-filter: blur(10px);
+    padding: 22px;
+}
+
+/* Zig-Zag */
+.zigzag {
+    display: flex;
+    gap: 20px;
+
+    &.reverse {
+        flex-direction: row-reverse;
+    }
+
+    @media(max-width: 900px) {
+        flex-direction: column !important;
+    }
+}
+
+.zigzag-img {
+    width: 40%;
+    border-radius: 14px;
+    object-fit: cover;
+
+    @media(max-width: 900px) {
+        width: 100%;
+    }
+}
+
+.zigzag-content {
+    width: 60%;
+
+    @media(max-width: 900px) {
+        width: 100%;
+    }
+}
+
+/* Details */
+.full-text {
+    white-space: pre-line;
+    color: $text-muted;
+    line-height: 1.65;
+}
+
+.chips span {
+    background: $accent-2;
+    padding: 6px 12px;
+    border-radius: 14px;
+    margin-right: 6px;
+    color: $text-dark;
+    font-size: 0.85rem;
+}

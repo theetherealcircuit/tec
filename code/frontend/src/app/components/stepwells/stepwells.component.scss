@@ -1,0 +1,116 @@
+/* Palette */
+$primary: #B7D3A8;
+$secondary: #D18C56;
+$text-dark: #3E4C3A;
+$text-muted: #7A8A6B;
+$accent-2: #E1D79B;
+$bg-light: #F7F2E6;
+
+/* Hero */
+.stepwell-hero {
+    height: 40vh;
+    background-image: url('/assets/stepwells/hero-stepwell.jpg');
+    background-size: cover;
+    background-position: center 40%;
+    border-bottom: 6px solid $secondary;
+}
+
+/* Container */
+.stepwell-container {
+    width: 90%;
+    margin: 40px auto;
+}
+
+/* Title */
+.section-title {
+    font-size: 2.2rem;
+    color: $text-dark;
+    border-left: 6px solid $secondary;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    color: $text-muted;
+    margin-bottom: 40px;
+}
+
+/* Left-Right block */
+.stepwell-block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    gap: 26px;
+
+    &.reverse {
+        flex-direction: row-reverse;
+    }
+
+    @media(max-width: 850px) {
+        flex-direction: column !important;
+    }
+}
+
+/* Image */
+.stepwell-image img {
+    width: 420px;
+    border-radius: 16px;
+    border: 3px solid $secondary;
+    object-fit: cover;
+
+    @media(max-width: 850px) {
+        width: 100%;
+    }
+}
+
+/* Content Box */
+.stepwell-content {
+    flex: 1;
+    padding: 22px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.45);
+    border: 1px solid rgba(209, 140, 86, 0.4);
+    backdrop-filter: blur(8px);
+}
+
+.stepwell-content h3 {
+    color: $text-dark;
+    margin-bottom: 6px;
+}
+
+.location {
+    color: $secondary;
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+
+.description {
+    color: $text-muted;
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+/* Highlights */
+.highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.highlight-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 10px 12px;
+    border-left: 4px solid $secondary;
+    border-radius: 8px;
+    color: $text-dark;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background: $secondary;
+    border-radius: 50%;
+}

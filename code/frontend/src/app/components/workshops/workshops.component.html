@@ -1,0 +1,24 @@
+<div class="workshop-hero"></div>
+
+<div class="workshop-container">
+
+    <h2 class="title">Workshops</h2>
+    <p class="subtitle">
+        Hands-on learning designed for curiosity, exploration and real field experience.
+    </p>
+
+    <div class="workshop-grid">
+        <div class="workshop-card" *ngFor="let w of workshops" [style.borderColor]="w.color">
+
+            <div class="icon-box" [style.background]="w.color + '22'">
+                <img [src]="w.icon" />
+            </div>
+
+            <h3>{{ w.title }}</h3>
+            <p>{{ w.short }}</p>
+
+            <!-- <button class="btn-view" [style.background]="w.color">Explore →</button> -->
+        </div>
+    </div>
+
+</div>

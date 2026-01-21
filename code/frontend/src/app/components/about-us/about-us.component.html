@@ -42,20 +42,53 @@
       experiences rooted in preservation, participation, and regeneration.</p>
   </section>
 
-  <h2>Our Team</h2>
-  <section class="team-section">
-    <p>The soul of The Ethereal Circuit is its people. Not guides. Not staff. But <strong class="highlight">guardians of
-        stories, places, and wisdom</strong>.</p>
+  <div class="team-intro">
 
-    <p>They are nomads who carry the songs of the forest. Historians and archaeologists who bring silence to life.
-      Mountaineers who know when to pause. Teachers who turn a trail into a classroom. Storytellers and photographers
-      who see what others miss. Climate scientists and environmentalists who remind us how to care.</p>
+    <h2>Our Team</h2>
 
-    <p>At the heart are the local custodians—folk artists, healers, and tradition-keepers—who give every journey its
-      spirit. <strong>They’re not behind the scenes. They are the scene.</strong></p>
+    <section class="team-section-text">
+      <p>
+        The soul of The Ethereal Circuit is its people. Not guides. Not staff. But
+        <strong class="highlight">guardians of stories, places, and wisdom</strong>.
+      </p>
 
-    <p>This team doesn’t sell travel. They protect a way of moving through the world—with respect, with care, with
-      meaning. With them, you’re not a tourist. <span class="highlight">You’re part of something worth living
-        for.</span></p>
-  </section>
+      <p>
+        They are nomads who carry the songs of the forest. Historians and archaeologists who bring silence to life.
+        Mountaineers who know when to pause. Teachers who turn a trail into a classroom. Storytellers and photographers
+        who see what others miss. Climate scientists and environmentalists who remind us how to care.
+      </p>
+
+      <p>
+        At the heart are the local custodians—folk artists, healers, and tradition-keepers—who give every journey its
+        spirit. <strong class="highlight">They’re not behind the scenes. They are the scene.</strong>
+      </p>
+
+      <p>
+        This team doesn’t sell travel. They protect a way of moving through the world—with respect, with care, with
+        meaning. With them, you’re not a tourist. <span class="highlight">You’re part of something worth living
+          for.</span>
+      </p>
+    </section>
+
+  </div>
+
+  <!-- TEAM GRID -->
+  <div class="team-grid">
+
+    <div class="team-card" *ngFor="let member of teamMembers">
+
+      <div class="team-img">
+        <img [src]="member.image" [alt]="member.name" />
+      </div>
+
+      <div class="team-info">
+        <h3>{{ member.name }}</h3>
+        <p class="role">{{ member.role }}</p>
+        <p class="about">{{ member.bio }}</p>
+      </div>
+
+    </div>
+
+  </div>
+
 </div>

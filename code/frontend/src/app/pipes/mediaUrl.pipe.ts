@@ -16,6 +16,7 @@ export class MediaUrlPipe implements PipeTransform {
             console.warn('Media base URL is not configured in environment. Returning relative path.');
             return relativePath; // Fallback to relative path if base URL isn't set
         }
+        console.log(relativePath);
 
         // Ensure correct concatenation regardless of leading/trailing slashes
         const base = baseUrl.endsWith('/') ? baseUrl.slice(0, -1) : baseUrl;

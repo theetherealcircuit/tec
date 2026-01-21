@@ -1,0 +1,148 @@
+/* YOUR PALETTE */
+$primary: #B7D3A8; // sage green
+$secondary: #D18C56; // amber gold
+$text-dark: #3E4C3A;
+$text-muted: #7A8A6B;
+$accent-2: #E1D79B;
+$text-light: #F8F8F3;
+$bg-light: #F7F2E6;
+
+/* HERO */
+.excursion-hero {
+    height: 48vh;
+    background-size: cover;
+    background-position: center 35%;
+    border-bottom: 6px solid $secondary;
+}
+
+/* WRAPPER */
+.excursion-wrapper {
+    width: 85%;
+    margin: 45px auto;
+    padding-bottom: 60px;
+}
+
+/* TITLE */
+.title {
+    font-size: 2.6rem;
+    color: $text-dark;
+    margin-bottom: 20px;
+}
+
+/* DISTANCE SECTION */
+.distance-box {
+    background: rgba(255, 255, 255, 0.55);
+    border: 1px solid $secondary;
+    padding: 18px 22px;
+    border-radius: 14px;
+    backdrop-filter: blur(8px);
+    margin-bottom: 30px;
+}
+
+.distance-label {
+    font-weight: 600;
+    color: $text-dark;
+    margin-bottom: 10px;
+}
+
+.distance-values {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.distance-chip {
+    background: $accent-2;
+    padding: 8px 16px;
+    border-radius: 18px;
+    color: $text-dark;
+    font-weight: 600;
+    opacity: 0;
+    animation: fadeUp 0.5s forwards ease-out;
+}
+
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* FULL CONTENT */
+.full-content {
+    margin-bottom: 40px;
+
+    p {
+        color: $text-muted;
+        line-height: 1.78;
+        margin-bottom: 18px;
+        font-size: 1.07rem;
+        white-space: pre-line;
+    }
+}
+
+/* HIGHLIGHTS */
+.highlights-section {
+    margin-top: 35px;
+}
+
+.highlights-section h3 {
+    color: $text-dark;
+    margin-bottom: 15px;
+}
+
+.highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 14px;
+}
+
+.highlight-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.55);
+    padding: 12px 15px;
+    border-left: 4px solid $secondary;
+    border-radius: 8px;
+    color: $text-dark;
+}
+
+.dot {
+    width: 9px;
+    height: 9px;
+    background: $secondary;
+    border-radius: 50%;
+}
+
+/* CTA */
+.cta-card {
+    background: $primary;
+    margin-top: 45px;
+    padding: 25px;
+    border-radius: 16px;
+    text-align: center;
+    color: $text-light;
+}
+
+.cta-btn {
+    margin-top: 15px;
+    background: $secondary;
+    color: $text-light;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 22px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.25s;
+
+    &:hover {
+        transform: translateY(-3px);
+        background: darken($secondary, 8%);
+    }
+}

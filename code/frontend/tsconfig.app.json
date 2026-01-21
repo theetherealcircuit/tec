@@ -7,7 +7,6 @@
     "types": [
       "node",
       "@angular/localize",
-      "swiper"
     ]
   },
   "files": [

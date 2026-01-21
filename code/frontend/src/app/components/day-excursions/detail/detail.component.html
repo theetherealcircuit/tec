@@ -1,0 +1,46 @@
+<!-- HERO -->
+<div class="excursion-hero" [style.backgroundImage]="'url(' + excursion.heroImage + ')'">
+</div>
+
+<div class="excursion-wrapper">
+
+    <!-- TITLE -->
+    <h1 class="title">{{ excursion.title }}</h1>
+
+    <!-- DISTANCE -->
+    <div class="distance-box">
+        <div class="distance-label">Distance</div>
+
+        <div class="distance-values">
+            <span *ngFor="let d of excursion.distance.split('|'); let i = index"
+                [style.animationDelay]="(0.1 * i) + 's'" class="distance-chip">
+                {{ d.trim() }}
+            </span>
+        </div>
+    </div>
+
+    <!-- FULL CONTENT -->
+    <div class="full-content">
+        <p *ngFor="let para of excursion.content.split('\n')">
+            {{ para }}
+        </p>
+    </div>
+
+    <!-- HIGHLIGHTS -->
+    <div class="highlights-section">
+        <h3>Highlights</h3>
+
+        <div class="highlight-grid">
+            <div class="highlight-item" *ngFor="let h of excursion.highlights">
+                <span class="dot"></span>{{ h }}
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="cta-card">
+        <p>Want to experience {{ excursion.title }} with our curated guidance?</p>
+        <button class="cta-btn">Contact Us →</button>
+    </div>
+
+</div>

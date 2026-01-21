@@ -21,13 +21,15 @@
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" [ngClass]="{'active' : currentTab == 'partners'}"
                   href="javascript:void(0)" role="button">
-                  Travel circuits
+                  Regenerative circuits
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="javascript:void(0)" [routerLink]="['/brokers']"
-                      data-bs-toggle="collapse" data-bs-target="#navbarNav">Signature circuits</a></li>
-                  <!-- <li><a class="dropdown-item" href="javascript:void(0)" [routerLink]="['/suppliers']"
-                      data-bs-toggle="collapse" data-bs-target="#navbarNav">Walking</a></li> -->
+                  <li><a class="dropdown-item" href="javascript:void(0)"
+                      [routerLink]="['/explore', 'circuits','signature-circuits']" data-bs-toggle="collapse"
+                      data-bs-target="#navbarNav">Signature circuits</a></li>
+                  <li><a class="dropdown-item" href="javascript:void(0)"
+                      [routerLink]="['/explore', 'circuits','living-circuits']" data-bs-toggle="collapse"
+                      data-bs-target="#navbarNav">Living Circuits</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
@@ -36,13 +38,20 @@
                   Experiences
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="javascript:void(0)" [routerLink]="['/brokers']"
-                      data-bs-toggle="collapse" data-bs-target="#navbarNav">Artistic</a></li>
-                  <li><a class="dropdown-item" href="javascript:void(0)" [routerLink]="['/suppliers']"
-                      data-bs-toggle="collapse" data-bs-target="#navbarNav">Earth & Sky</a></li>
-                  <li><a class="dropdown-item" href="javascript:void(0)" [routerLink]="['/suppliers']"
-                      data-bs-toggle="collapse" data-bs-target="#navbarNav">Spritual</a></li>
+                  <li><a class="dropdown-item" href="javascript:void(0)" [routerLink]="['/heritage-walk']"
+                      data-bs-toggle="collapse" data-bs-target="#navbarNav">Heritage Walks</a></li>
+                  <li><a class="dropdown-item" href="javascript:void(0)" [routerLink]="['/day-excursion']"
+                      data-bs-toggle="collapse" data-bs-target="#navbarNav">Day Excursions</a></li>
+                  <li><a class="dropdown-item" href="javascript:void(0)" [routerLink]="['/stepwells']"
+                      data-bs-toggle="collapse" data-bs-target="#navbarNav">Stepwells of Rajasthan</a></li>
                 </ul>
+              </li>
+              <li class="nav-item mr-3 mb-2 mb-sm-0">
+                <a class="nav-link" href="javascript:void(0)" [routerLink]="['/workshops']" routerLinkActive="active"
+                  data-bs-toggle="collapse" data-bs-target="#navbarNav">Workshops</a>
+              </li>
+              <li class="nav-item mr-3 mb-2 mb-sm-0">
+                <a class="nav-link" href="/assets/Events/mfh/index.html">MHF</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" [ngClass]="{'active' : currentTab == 'company'}"
@@ -54,10 +63,10 @@
                       data-bs-toggle="collapse" data-bs-target="#navbarNav">About us</a></li>
                   <li><a class="dropdown-item" [routerLink]="['/contact-us']" [href]="externalLinks.contactUs">Contact
                       us</a></li>
-                  <li><a class="dropdown-item" href="javascript:void(0)" [routerLink]="['/careers']"
-                      data-bs-toggle="collapse" data-bs-target="#navbarNav">Join us</a></li>
-                  <li><a class="dropdown-item" href="javascript:void(0)" [routerLink]="['/blogs']"
-                      data-bs-toggle="collapse" data-bs-target="#navbarNav">Blogs</a></li>
+                  <!-- <li><a class="dropdown-item" href="javascript:void(0)" [routerLink]="['/careers']"
+                      data-bs-toggle="collapse" data-bs-target="#navbarNav">Join us</a></li> -->
+                  <!-- <li><a class="dropdown-item" href="javascript:void(0)" [routerLink]="['/blogs']"
+                      data-bs-toggle="collapse" data-bs-target="#navbarNav">Blogs</a></li> -->
                   <li><a class="dropdown-item" href="javascript:void(0)" [routerLink]="['/gallery']"
                       data-bs-toggle="collapse" data-bs-target="#navbarNav">Gallery</a></li>
                 </ul>

@@ -1,0 +1,14 @@
+<div class="listing-wrapper">
+    <h2 class="page-title text-center">{{ currentTitle }}</h2>
+
+    <div class="card-grid">
+        <div class="card" *ngFor="let item of items">
+            <img [src]="item.image | mediaUrl" [alt]="item.title" />
+            <div class="card-content">
+                <h3>{{ item.title }}</h3>
+                <p>{{ item.summary }}</p>
+                <!-- <button (click)="viewDetails(currentTitle, item.slug)">View Details</button> -->
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,55 @@
+<div class="overlay" *ngIf="visible"></div>
+
+<div class="event-modal-wrapper" *ngIf="visible">
+    <div class="event-modal" [ngStyle]="{'background-image': 'url(assets/images/menar_event.jpg)'}">
+
+        <!-- Cultural Border -->
+        <div class="cultural-border"></div>
+
+        <!-- Close button -->
+        <button class="close-btn" (click)="closeModal()">✕</button>
+
+        <!-- Mandala behind text -->
+        <div class="mandala-bg"></div>
+
+        <!-- Floating particles -->
+        <div class="particles">
+            <span *ngFor="let p of particles"></span>
+        </div>
+
+        <!-- TEXT SECTION -->
+        <div class="text-section">
+            <h1 class="event-main-title animate-fade-up animate-glow">
+                Mewar Heritage Festival
+            </h1>
+
+            <p class="event-subheading animate-fade-up" style="animation-delay: .2s;">
+                2026 · Menar
+            </p>
+
+            <p class="event-tagline animate-fade-up" style="animation-delay: .4s;">
+                Welcome to India’s First Regenerative Festival
+            </p>
+        </div>
+
+        <!-- COUNTDOWN -->
+        <div class="countdown animate-fade-up" style="animation-delay: .6s;">
+            <div class="box"><span>{{ countdown.days }}</span><small>Days</small></div>
+            <div class="box"><span>{{ countdown.hrs }}</span><small>Hrs</small></div>
+            <div class="box"><span>{{ countdown.mins }}</span><small>Mins</small></div>
+            <div class="box"><span>{{ countdown.secs }}</span><small>Secs</small></div>
+        </div>
+
+        <!-- Below countdown -->
+        <p class="event-details animate-fade-up" style="animation-delay: .8s;">
+            14, 15 & 16 February 2026 · Menar (Udaipur), Rajasthan
+        </p>
+
+        <!-- CTA BUTTON -->
+
+        <div class="button-wrapper animate-fade-up" style="animation-delay: 1s;">
+            <button class="view-btn">View More</button>
+        </div>
+    </div>
+
+</div>

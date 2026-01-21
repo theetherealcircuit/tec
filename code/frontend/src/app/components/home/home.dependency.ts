@@ -5,6 +5,9 @@ import { TestimonialsComponent } from '../shared/testimonials/testimonials.compo
 import { FaqComponent } from '../shared/faq/faq.component';
 import { RouterModule } from '@angular/router';
 import { BannerComponent } from '../shared/banner/banner.component';
+import { EventModalComponent } from '../shared/event-modal/event-modal.component';
+import { MediaUrlPipe } from '../../pipes/mediaUrl.pipe';
+import { HeroSectionComponent } from '../hero-section/hero-section.component';
 
 export const HomeDependency = [
     CommonModule,
@@ -13,5 +16,8 @@ export const HomeDependency = [
     TestimonialsComponent,
     FaqComponent,
     RouterModule,
-    BannerComponent
+    BannerComponent,
+    EventModalComponent,
+    MediaUrlPipe,
+    HeroSectionComponent
 ];

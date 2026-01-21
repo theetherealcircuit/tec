@@ -34,7 +34,8 @@
             "styles": [
               "src/styles.scss",
               "src/assets/vendor/bootstrap/css/bootstrap.min.css",
-              "src/assets/libs/scss/style.scss"
+              "src/assets/libs/scss/style.scss",
+              "node_modules/locomotive-scroll/dist/locomotive-scroll.css"
             ],
             "scripts": []
           },
@@ -48,8 +49,8 @@
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "2mb",
+                  "maximumError": "4mb"
                 }
               ],
               "outputHashing": "all",
@@ -69,8 +70,8 @@
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "2mb",
+                  "maximumError": "4mb"
                 }
               ],
               "outputHashing": "all",
@@ -113,7 +114,8 @@
             "styles": [
               "src/styles.scss",
               "src/assets/vendor/bootstrap/css/bootstrap.min.css",
-              "src/assets/libs/scss/style.scss"
+              "src/assets/libs/scss/style.scss",
+              "node_modules/locomotive-scroll/dist/locomotive-scroll.css"
             ],
             "scripts": []
           }

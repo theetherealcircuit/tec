@@ -1,7 +1,7 @@
 {
     "cards": [
         {
-            "name": "The Astral Heritage Circuit",
+            "name": "Rediscovering Jaipur",
             "image": "astral_heritage_main.jpg",
             "summary": "This journey is where stone meets stardust—where heritage doesn’t stand still, it orbits through time.",
             "detail": "The trek to Tungnath and Chandrashila offers a spiritual and scenic journey through the Garhwal Himalayas. Starting from Chopta, this moderate trail winds through dense forests and alpine meadows before reaching Tungnath — the world’s highest Shiva temple. A further ascent to Chandrashila summit rewards trekkers with a breathtaking panoramic view of snow-capped Himalayan peaks including Nanda Devi, Trishul, and Kedarnath. This trek is ideal for beginners and nature lovers.",
@@ -25,7 +25,7 @@
             ]
         },
         {
-            "name": "The Backwaters Circuit",
+            "name": "Legends of Bairat",
             "image": "backwater_circuit_main.jpg",
             "summary": "Glide through Kerala's emerald veins aboard traditional houseboats, where Chinese fishing nets dance with tides and spice gardens breathe stories of merchant sailors.",
             "detail": "The trek to Tungnath and Chandrashila offers a spiritual and scenic journey through the Garhwal Himalayas. Starting from Chopta, this moderate trail winds through dense forests and alpine meadows before reaching Tungnath — the world’s highest Shiva temple. A further ascent to Chandrashila summit rewards trekkers with a breathtaking panoramic view of snow-capped Himalayan peaks including Nanda Devi, Trishul, and Kedarnath. This trek is ideal for beginners and nature lovers.",
@@ -49,7 +49,55 @@
             ]
         },
         {
-            "name": "The Hampi Circuit",
+            "name": "Sambhar : The Nature's Call",
+            "image": "hampi_circuit_main.jpg",
+            "summary": "Travel through time where empires once danced with divinity.",
+            "detail": "The trek to Tungnath and Chandrashila offers a spiritual and scenic journey through the Garhwal Himalayas. Starting from Chopta, this moderate trail winds through dense forests and alpine meadows before reaching Tungnath — the world’s highest Shiva temple. A further ascent to Chandrashila summit rewards trekkers with a breathtaking panoramic view of snow-capped Himalayan peaks including Nanda Devi, Trishul, and Kedarnath. This trek is ideal for beginners and nature lovers.",
+            "link": "/trails/tungnath",
+            "stories": [
+                {
+                    "image": "hampi_circuit_story_1.jpg",
+                    "caption": "Walk through ruins where gods and kings once ruled.",
+                    "heading": "Whispers of the Lost Empire"
+                },
+                {
+                    "image": "hampi_circuit_story_2.jpg",
+                    "heading": "Carved in Stone, Etched in Time",
+                    "caption": "Discover legends sculpted into cave walls and temple stones."
+                },
+                {
+                    "image": "hampi_circuit_story_3.jpg",
+                    "heading": "Myths You Can Touch",
+                    "caption": "Experience epics through archaeology, iconography, and storytelling."
+                }
+            ]
+        },
+        {
+            "name": "The Cosmic trail",
+            "image": "hampi_circuit_main.jpg",
+            "summary": "Travel through time where empires once danced with divinity.",
+            "detail": "The trek to Tungnath and Chandrashila offers a spiritual and scenic journey through the Garhwal Himalayas. Starting from Chopta, this moderate trail winds through dense forests and alpine meadows before reaching Tungnath — the world’s highest Shiva temple. A further ascent to Chandrashila summit rewards trekkers with a breathtaking panoramic view of snow-capped Himalayan peaks including Nanda Devi, Trishul, and Kedarnath. This trek is ideal for beginners and nature lovers.",
+            "link": "/trails/tungnath",
+            "stories": [
+                {
+                    "image": "hampi_circuit_story_1.jpg",
+                    "caption": "Walk through ruins where gods and kings once ruled.",
+                    "heading": "Whispers of the Lost Empire"
+                },
+                {
+                    "image": "hampi_circuit_story_2.jpg",
+                    "heading": "Carved in Stone, Etched in Time",
+                    "caption": "Discover legends sculpted into cave walls and temple stones."
+                },
+                {
+                    "image": "hampi_circuit_story_3.jpg",
+                    "heading": "Myths You Can Touch",
+                    "caption": "Experience epics through archaeology, iconography, and storytelling."
+                }
+            ]
+        },
+        {
+            "name": "Demystifying Sarnath",
             "image": "hampi_circuit_main.jpg",
             "summary": "Travel through time where empires once danced with divinity.",
             "detail": "The trek to Tungnath and Chandrashila offers a spiritual and scenic journey through the Garhwal Himalayas. Starting from Chopta, this moderate trail winds through dense forests and alpine meadows before reaching Tungnath — the world’s highest Shiva temple. A further ascent to Chandrashila summit rewards trekkers with a breathtaking panoramic view of snow-capped Himalayan peaks including Nanda Devi, Trishul, and Kedarnath. This trek is ideal for beginners and nature lovers.",

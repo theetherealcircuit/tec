@@ -1,0 +1,114 @@
+{
+    "circuits": [
+        {
+            "type": "Signature Circuits",
+            "slug": "signature-circuits",
+            "items": [
+                {
+                    "title": "The Hampi Circuit",
+                    "summary": "Walk through Vijayanagara’s timeless ruins where our art-historians decode basics of Iconography, and our craft specialists introduce students to living heritage through sketching and stone- carving basics. Join our heritage clean-up drive, reviving sacred paths and stories lost to time",
+                    "details": "Travel through time where empires once danced with divinity. In Hampi, walk the ruins of Vijayanagara—a city lost, yet alive in its boulders. Decode temple stories in Badami’s caveshrines and understand the shift from myth to sculpture in Aihole’s cradle of architecture.",
+                    "image": "hampi_circuit.jpg"
+                },
+                {
+                    "title": " THE “JUNGLE BOOK” CIRCUIT.",
+                    "summary": "Journey through India's earliest caves into forests that inspired Mowgli' world. From prehistoric rock art to wild forests, archaeologists interpret ancient symbols while naturalists guide wildlife tracking and ecological learning. Where tribal storytellers open windows into memory and myth. Participatein a reforestation drive with local youth- our way of giving back to landscapes that have sheltered life since prehistory",
+                    "slug": "viratnagar-chronicles",
+                    "image": "jungle_circuit.jpeg"
+                },
+                {
+                    "title": "THE 3-F CIRCUIT",
+                    "summary": "Walk across fossil beds with geologists, explore tidepools with marine naturalists, and engage with coastal craft communities. Participate in our Mangrove conservation efforts that anchors our regenerative promise to future shorelines.",
+                    "slug": "sambhar-circuit",
+                    "image": "3f.jpg"
+                },
+                {
+                    "title": "THE FORTS & FUTURE CIRCUIT",
+                    "summary": "From imperial engineering to craft legacies and wildlife corridors, this circuit bridges India’s past and future. Experts bring fort architecture and urban planning alive, artisans lead blue pottery or block printing sessions, and naturalists guide tiger trails in Sariska. Stepwell clean-ups bring travellers into Jaipur’s cycle of heritage care and community revival. ",
+                    "slug": "sambhar-circuit",
+                    "image": "forts_circuit.jpg"
+                },
+                {
+                    "title": "THE HIMALAYAN GRIT CIRCUIT",
+                    "summary": "Through valleys, cedar forests, and highland trails, the Himalaya becomes a training ground for resilience. Mountaineers teach safe movement and survival skills, naturalists decode river ecosystems, and farmers invite students into organic mountain agriculture. Our trail-cleansing efforts ensure that every footprint supports this sacred terrain.",
+                    "slug": "sambhar-circuit",
+                    "image": "himalayan_circuit.jpg"
+                }
+            ]
+        },
+        {
+            "type": "Living Circuits",
+            "slug": "living-circuits",
+            "items": [
+                {
+                    "title": "The Eternal Cave Circuit",
+                    "summary": "Step into the world's largest complex of rock-cut temples at ELLORA from 6th-12th centuries, Where at Kailasa the cosmic dance of Shiva is expressed in sculpted stone. Explore the birthplace of Indian mural art at AJANTA from 2200 years ago! The depiction of Jataka tales reveals mesmerizing aesthetics and elegance of Buddhist paintings—the art pinnacle of the Vakataka-Gupta classical era. At DAULATABAD, the impregnable 12th-century fortress showcases military genius where geography met strategy.",
+                    "details": "Travel through time where empires once danced with divinity. In Hampi, walk the ruins of Vijayanagara—a city lost, yet alive in its boulders. Decode temple stories in Badami’s caveshrines and understand the shift from myth to sculpture in Aihole’s cradle of architecture.",
+                    "image": "eternal_circuit.jpg"
+                },
+                {
+                    "title": "The Starry Circuit",
+                    "summary": "Embark on the world’s most soul-stirring road trip. Spiti isn't trekked—it's driven into your bones. From the ancient murals of Tabo to the otherworldly moonscapes of Langza, every curve tells a thousand-year tale. Post a letter from Hikkim—the world’s highest post office—before breathing in silence at key Monastery. Camp by the mythic Chandratal Lake. Astrophotography workshops and night sky storytelling open galaxies within. Conclude with a Carbon Cleanse Drive, replacing plastic in remote villages with solar kits and biodegradable kits—carrying light where even roads hesitate.",
+                    "slug": "viratnagar-chronicles",
+                    "image": "starry_circuit.jpg"
+                },
+                {
+                    "title": "The Backwaters Circuit",
+                    "summary": "Drift through the emerald veins of Kerala where the backwaters sing in coconut tongues and birds script poems across the sky. Experience slow travel on kettuvallam houseboats, stop at toddy shops, and share stories with fishing families. Join a coir-making or spice-blending workshop led by local women. Photograph mirror-like lagoons and misty mornings with guidance from a landscape expert. End with a “Backwater Carnival”—a community recreational evening of local games, songs, and plant-a-sapling pledges for flood-affected zones.",
+                    "slug": "sambhar-circuit",
+                    "image": "backwater_circuit.jpg"
+                },
+                {
+                    "title": "The 3-C Circuit",
+                    "summary": "Meghalaya’s living root bridges. Assam’s golden tea gardens. Cloud-wrapped cliffs and bamboo stories. This circuit begins where rivers are sacred and skies never sit still. Taste smoky pork by the hearth, trek to sacred groves, and sip tea plucked that morning. Learn weaving or bamboo crafting in a hands-on workshop with tribal artisans. Frame waterfalls, caves, and cloudscapes in a fun landscape photography jam with games like “capture the sound.” End with a “Green Pact Drive”—planting monsoon-resilient herbs with villagers. ",
+                    "slug": "sambhar-circuit",
+                    "image": "3c.jpeg"
+                },
+                {
+                    "title": "The Astral Heritage Circuit",
+                    "summary": "Where rockets kiss the sky and stones whisper science. Begin in Chennai’s buzzing cityscape, then enter the sacred silence of Sriharikota—India’s gateway to space. Feel the pulse of ISRO’s brilliance. Next, step into Kanchipuram, where temples were once blueprints of cosmic architecture. At Mahabalipuram, decode stories carved in stone that mapped the stars long before satellites did. From aerospace to ancient equations, this circuit connects the arc of India’s intellect across time",
+                    "slug": "sambhar-circuit",
+                    "image": "astral_circuit.jpeg"
+                }
+            ]
+        }
+    ],
+    "experiences": [
+        {
+            "type": "Treks & Trails",
+            "slug": "treks-trails",
+            "items": [
+                {
+                    "title": "Swargrohini Trek",
+                    "summary": "Ascend to the heavens with the Pandavas’ final journey",
+                    "slug": "swargrohini-trek",
+                    "image": "swargrohini.jpg"
+                }
+            ]
+        },
+        {
+            "type": "Heritage Walks",
+            "slug": "heritage-walks",
+            "items": [
+                {
+                    "title": "Amber Heritage Walk",
+                    "summary": "Wander through the living palace of Rajasthan",
+                    "slug": "amber-heritage-walk",
+                    "image": "amber-walk.jpg"
+                }
+            ]
+        },
+        {
+            "type": "Local Lives",
+            "slug": "local-lives",
+            "items": [
+                {
+                    "title": "Coir & Coconut Tales",
+                    "summary": "Kerala’s backwater stories through local women’s eyes",
+                    "slug": "coir-coconut-tales",
+                    "image": "sariska.jpg"
+                }
+            ]
+        }
+    ]
+}

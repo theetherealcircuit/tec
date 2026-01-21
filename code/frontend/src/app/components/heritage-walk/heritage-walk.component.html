@@ -1,0 +1,61 @@
+<div class="heritage-hero" [ngStyle]="{'background-image': 'url(assets/images/heritage_walk.PNG)'}">
+    <div class="overlay_bg"></div>
+    <!-- <div class="hero-content">
+        <h1>Heritage Walks</h1>
+        <p>Walk through stories carved in stone & time.</p>
+    </div> -->
+</div>
+
+<div class="walk-accordion">
+
+    <div class="accordion custom-accordion" id="heritageAccordion">
+
+        <div class="accordion-item" *ngFor="let walk of walks; let i = index">
+
+            <!-- HEADER -->
+            <h2 class="accordion-header" [id]="'heading-' + walk.id">
+
+                <button class="accordion-button" [class.collapsed]="i !== 0" type="button" data-bs-toggle="collapse"
+                    [attr.data-bs-target]="'#collapse-' + walk.id" [attr.aria-controls]="'collapse-' + walk.id">
+                    <img [src]="walk.image" class="thumb" />
+
+                    <span class="title">{{ walk.title }}</span>
+
+                    <span *ngIf="walk.comingSoon" class="coming-soon ms-auto">
+                        Coming Soon
+                    </span>
+                </button>
+
+            </h2>
+
+            <!-- BODY -->
+            <div [id]="'collapse-' + walk.id" class="accordion-collapse collapse" [class.show]="i === 0"
+                [attr.aria-labelledby]="'heading-' + walk.id" data-bs-parent="#heritageAccordion">
+                <div class="accordion-body glass">
+
+                    <div class="zigzag" [ngClass]="{ 'reverse': i % 2 !== 0 }">
+
+                        <img [src]="walk.image" class="zigzag-img" />
+
+                        <div class="zigzag-content">
+
+                            <p class="full-text">{{ walk.content }}</p>
+
+                            <div class="chips">
+                                <span>{{ walk.details.duration }}</span>
+                                <span>{{ walk.details.difficulty }}</span>
+                                <span>{{ walk.details.bestTime }}</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>

@@ -1,0 +1,37 @@
+<div class="stepwell-hero"></div>
+
+<div class="stepwell-container">
+
+    <h2 class="section-title">Stepwells of Rajasthan</h2>
+    <p class="section-subtitle">
+        Ancient water wisdom carved in stone — where architecture meets community memory.
+    </p>
+
+    <div class="stepwell-block" *ngFor="let sw of stepwells; let i = index" [ngClass]="{ 'reverse': i % 2 !== 0 }">
+
+        <!-- IMAGE -->
+        <div class="stepwell-image">
+            <img [src]="sw.image" [alt]="sw.title" />
+        </div>
+
+        <!-- CONTENT -->
+        <div class="stepwell-content glass">
+
+            <h3>{{ sw.title }}</h3>
+            <p class="location">{{ sw.location }}</p>
+
+            <p class="description">
+                {{ sw.description }}
+            </p>
+
+            <div class="highlights">
+                <div class="highlight-item" *ngFor="let h of sw.highlights">
+                    <span class="dot"></span>{{ h }}
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
