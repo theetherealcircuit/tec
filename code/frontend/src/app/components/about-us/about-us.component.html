@@ -78,7 +78,7 @@
     <div class="team-card" *ngFor="let member of teamMembers">
 
       <div class="team-img">
-        <img [src]="member.image" [alt]="member.name" />
+        <img [src]="member.image | mediaUrl" [alt]="member.name" />
       </div>
 
       <div class="team-info">

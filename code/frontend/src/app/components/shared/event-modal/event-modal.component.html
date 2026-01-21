@@ -1,7 +1,7 @@
 <div class="overlay" *ngIf="visible"></div>
 
 <div class="event-modal-wrapper" *ngIf="visible">
-    <div class="event-modal" [ngStyle]="{'background-image': 'url(assets/images/menar_event.jpg)'}">
+    <div class="event-modal" [ngStyle]="{'background-image': 'url(menar_event.jpg | mediaUrl)'}">
 
         <!-- Cultural Border -->
         <div class="cultural-border"></div>
@@ -10,7 +10,7 @@
         <button class="close-btn" (click)="closeModal()">✕</button>
 
         <!-- Mandala behind text -->
-        <div class="mandala-bg"></div>
+        <div class="mandala-bg" [ngStyle]="{'background-image': 'url(mandal.png | mediaUrl)'}"></div>
 
         <!-- Floating particles -->
         <div class="particles">

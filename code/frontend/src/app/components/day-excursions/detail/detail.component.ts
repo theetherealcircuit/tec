@@ -6,7 +6,7 @@ const dayExcursions = [
     id: "viratnagar",
     title: "Viratnagar",
     distance: "Delhi ~260 km | Gurgaon ~235 km | Jaipur ~85 km",
-    heroImage: "assets/day/viratnagar/hero.jpg",
+    heroImage: "hero.jpg",
     content: `Viratnagar is one of the most historically layered landscapes near Jaipur, yet remains largely overlooked. A site which holds prehistoric rock art so close to Jaipur, India’s earliest free-standing Buddhist structures, and Ashokan inscriptions carved in Brahmi script. Myth and material culture intersect here—Mahabharata memories coexist with archaeology, not as legend alone but embedded in geography.
 Today, neglect, lack of interpretation, and casual tourism threaten these fragile remains. 
 
@@ -25,7 +25,7 @@ Our efforts here focuses on cleanliness drives at archaeological zones, responsi
     id: "sambhar",
     title: "Sambhar",
     distance: "Delhi ~380 km | Gurgaon ~355 km | Jaipur ~95 km",
-    heroImage: "assets/day/sambhar/hero.jpg",
+    heroImage: "hero.jpg",
     content: `Sambhar is India’s largest inland saltwater lake and a critical wetland for migratory birds, especially flamingos. 
 While its pink horizons attract attention, the lake faces serious stress from unregulated tourism, drone activity, water imbalance, and habitat disturbance. 
 
@@ -43,7 +43,7 @@ Observation here is based on restraint—no drones, minimal disturbance, wetland
     id: "sariska",
     title: "Sariska",
     distance: "Delhi ~200 km | Gurgaon ~180 km | Jaipur ~110 km",
-    heroImage: "assets/day/sariska/hero.jpg",
+    heroImage: "hero.jpg",
     content: `Sariska is often seen only as a tiger reserve, but it is also a landscape shaped by temples, forts, seasonal streams, and centuries of human presence. 
 Increasing tourism pressure and noise threaten both wildlife corridors and heritage ruins hidden within the forest. 
 
@@ -62,7 +62,7 @@ Rather than chasing sightings, we learn about animal movement, forest regenerati
     id: "bharatpur",
     title: "Bharatpur",
     distance: "Delhi ~185 km | Gurgaon ~165 km | Jaipur ~190 km",
-    heroImage: "assets/day/bharatpur/hero.jpg",
+    heroImage: "hero.jpg",
     content: `Bharatpur’s Keoladeo wetlands are globally known for birds, yet few visitors understand the careful water management that sustains this ecosystem. 
 Today, crowding and hurried birding risk disturbing its delicate balance. 
 
@@ -81,7 +81,7 @@ We engage in birding etiquette awareness, and responsible observation practices.
     id: "ranthambore",
     title: "Ranthambore",
     distance: "Delhi ~390 km | Gurgaon ~360 km | Jaipur ~180 km",
-    heroImage: "assets/day/ranthambore/hero.jpg",
+    heroImage: "hero.jpg",
     content: `Ranthambore Fort rises dramatically within dense forest, telling a story far older than wildlife tourism. While the surrounding park draws attention, the fort’s temples, stepwells, and pathways face neglect from heavy footfall and limited interpretation. 
 
 TEC explores the fort with historians and archaeologists who decode its architecture, water systems, and strategic design in relation to the forest landscape. Participants learn how earlier settlements adapted to cliffs, monsoon flows, and wildlife rather than dominating them. 
@@ -100,7 +100,7 @@ The experience encourages mindful movement through shared spaces—allowing Rant
     id: "harsh-parvat",
     title: "Harsh Parvat",
     distance: "Delhi ~210 km | Gurgaon ~190 km | Jaipur ~120 km",
-    heroImage: "assets/day/harsh/hero.jpg",
+    heroImage: "hero.jpg",
     content: `Harsh Parvat is an early centre of Pashupat Shaivism, set amidst hills, gorges, and wind-swept ridges. 
 Often reduced to a temple visit, the site today suffers from neglect and loss of landscape context. 
 

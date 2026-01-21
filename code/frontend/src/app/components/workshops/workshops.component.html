@@ -1,4 +1,4 @@
-<div class="workshop-hero"></div>
+<div class="workshop-hero" [ngStyle]="{'background-image': 'url(hero-stepwell.jpg | mediaUrl)'}"></div>
 
 <div class="workshop-container">
 
@@ -11,7 +11,7 @@
         <div class="workshop-card" *ngFor="let w of workshops" [style.borderColor]="w.color">
 
             <div class="icon-box" [style.background]="w.color + '22'">
-                <img [src]="w.icon" />
+                <img [src]="w.icon | mediaUrl" />
             </div>
 
             <h3>{{ w.title }}</h3>

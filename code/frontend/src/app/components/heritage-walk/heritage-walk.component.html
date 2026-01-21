@@ -1,4 +1,4 @@
-<div class="heritage-hero" [ngStyle]="{'background-image': 'url(assets/images/heritage_walk.PNG)'}">
+<div class="heritage-hero" [ngStyle]="{'background-image': 'url(heritage_walk.PNG | mediaUrl)'}">
     <div class="overlay_bg"></div>
     <!-- <div class="hero-content">
         <h1>Heritage Walks</h1>
@@ -35,7 +35,7 @@
 
                     <div class="zigzag" [ngClass]="{ 'reverse': i % 2 !== 0 }">
 
-                        <img [src]="walk.image" class="zigzag-img" />
+                        <img [src]="walk.image | mediaUrl" class="zigzag-img" />
 
                         <div class="zigzag-content">
 

@@ -1,4 +1,4 @@
-<div class="stepwell-hero"></div>
+<div class="stepwell-hero" [ngStyle]="{'background-image': 'url(hero-stepwell.jpg | mediaUrl)'}"></div>
 
 <div class="stepwell-container">
 
@@ -11,7 +11,7 @@
 
         <!-- IMAGE -->
         <div class="stepwell-image">
-            <img [src]="sw.image" [alt]="sw.title" />
+            <img [src]="sw.image | mediaUrl" [alt]="sw.title" />
         </div>
 
         <!-- CONTENT -->

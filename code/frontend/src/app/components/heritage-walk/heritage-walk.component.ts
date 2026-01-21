@@ -2,12 +2,13 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { MediaUrlPipe } from '../../pipes/mediaUrl.pipe';
 
 gsap.registerPlugin(ScrollTrigger);
 @Component({
   selector: 'app-heritage-walk',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, MediaUrlPipe],
   templateUrl: './heritage-walk.component.html',
   styleUrl: './heritage-walk.component.scss'
 })
@@ -23,7 +24,7 @@ export class HeritageWalkComponent implements OnInit {
     {
       id: "jaipur",
       title: "Pink City Immersion – Jaipur",
-      image: "assets/images/jaipur_heritage_walk.jpg",
+      image: "jaipur_heritage_walk.jpg",
       comingSoon: false,
       content: `Jaipur is more than a Pink City. It is a mosaic of terracotta alleys—a planned 
 city where palaces, science, crafts, communities, and wild edges coexist.
@@ -50,7 +51,7 @@ connection, and regenerative responsibility.`,
     {
       id: "varanasi",
       title: "Varanasi Heritage Walk",
-      image: "assets/images/varanasi_walk.jpg",
+      image: "varanasi_walk.jpg",
       comingSoon: true,
       content: `Varanasi doesn’t allow a single route; it invites
 many. A verse leads to a home, a footprint leads to

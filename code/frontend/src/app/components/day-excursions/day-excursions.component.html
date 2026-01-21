@@ -1,5 +1,5 @@
 <!-- HERO SECTION -->
-<div class="day-hero" [ngStyle]="{'background-image': 'url(assets/images/day_excursion.PNG)'}"></div>
+<div class="day-hero" [ngStyle]="{'background-image': 'url(day_excursion.PNG | mediaUrl)'}"></div>
 
 <div class="excursion-container">
 
@@ -10,7 +10,7 @@
 
         <div class="excursion-card" *ngFor="let ex of dayExcursions" (click)="goToDetail(ex.id)">
 
-            <div class="card-image" [style.backgroundImage]="'url(' + ex.heroImage + ')'">
+            <div class="card-image" [style.backgroundImage]="'url(' + ex.heroImage +' | mediaUrl)'">
             </div>
 
             <div class="card-content">
