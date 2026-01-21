@@ -1,9 +1,10 @@
 import { CommonModule, DatePipe } from '@angular/common';
 import { Component, Input, OnDestroy, OnInit } from '@angular/core';
+import { MediaUrlPipe } from '../../../pipes/mediaUrl.pipe';
 
 @Component({
   selector: 'app-event-modal',
-  imports: [CommonModule],
+  imports: [CommonModule, MediaUrlPipe],
   standalone: true,
   templateUrl: './event-modal.component.html',
   styleUrl: './event-modal.component.scss'

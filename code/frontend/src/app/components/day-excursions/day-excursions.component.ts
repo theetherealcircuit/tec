@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { MediaUrlPipe } from '../../pipes/mediaUrl.pipe';
 
 @Component({
   selector: 'app-day-excursions',
-  imports: [CommonModule],
+  imports: [CommonModule, MediaUrlPipe],
   standalone: true,
   templateUrl: './day-excursions.component.html',
   styleUrl: './day-excursions.component.scss'

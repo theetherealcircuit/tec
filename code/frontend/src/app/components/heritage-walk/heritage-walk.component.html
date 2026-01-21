@@ -1,4 +1,4 @@
-<div class="heritage-hero" [ngStyle]="{'background-image': 'url(heritage_walk.PNG | mediaUrl)'}">
+<div class="heritage-hero" [style.backgroundImage]="'url(' + ('heritage_walk.PNG' | mediaUrl )+ ')'">
     <div class="overlay_bg"></div>
     <!-- <div class="hero-content">
         <h1>Heritage Walks</h1>
@@ -17,7 +17,7 @@
 
                 <button class="accordion-button" [class.collapsed]="i !== 0" type="button" data-bs-toggle="collapse"
                     [attr.data-bs-target]="'#collapse-' + walk.id" [attr.aria-controls]="'collapse-' + walk.id">
-                    <img [src]="walk.image" class="thumb" />
+                    <img [src]="walk.image | mediaUrl" class="thumb" />
 
                     <span class="title">{{ walk.title }}</span>
 

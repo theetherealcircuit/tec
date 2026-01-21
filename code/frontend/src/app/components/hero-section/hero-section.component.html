@@ -1,9 +1,8 @@
 <div class="hero-wrapper">
 
     <!-- Background -->
-    <div class="background-wrapper" [style.backgroundImage]="'url(' + activeSlide.bg + ')'">
+    <div class="background-wrapper" [style.backgroundImage]="'url(' + (activeSlide.bg | mediaUrl )+ ')'">
     </div>
-
     <!-- Left Content -->
     <div class="hero-content">
         <h1>{{ activeSlide.title }}</h1>
@@ -20,7 +19,7 @@
         @for (slide of slides; track slide; let i = $index) {
         <swiper-slide>
             <div class="card" [class.active]="i === activeIndex">
-                <img [src]="slide.card.img" />
+                <img [src]="slide.card.img | mediaUrl" />
                 <div class="card-content">
                     <h3>{{ slide.card.title }}</h3>
                 </div>

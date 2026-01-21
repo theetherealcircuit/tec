@@ -1,13 +1,14 @@
 import { AfterViewInit, Component, CUSTOM_ELEMENTS_SCHEMA, ElementRef, ViewChild } from '@angular/core';
+import { SharedDependencies } from '../shared/shared.dependency';
 const SLIDES = [
   {
     title: "Mewar Heritage Festival",
     subtitle: "2026 · Menar",
     desc: "India’s First Regenerative Festival set amidst the cultural heritage of Rajasthan.",
-    bg: "assets/images/banner/banner_1.jpg",
+    bg: "banner/banner_1.jpg",
     card: {
       title: "MFH",
-      img: "assets/images/banner/menar_event.jpg",
+      img: "banner/menar_event.jpg",
       rating: 4.8
     }
   },
@@ -16,10 +17,10 @@ const SLIDES = [
     title: "Heritage Walk",
     subtitle: "Udaipur · Rajasthan",
     desc: "A sacred spiritual site atop the hill, surrounded by stunning landscapes.",
-    bg: "assets/images/banner/banner_2.JPG",
+    bg: "banner/banner_2.JPG",
     card: {
       title: "Heritage Walk",
-      img: "assets/images/banner/jaipur-forts.jpg",
+      img: "banner/jaipur-forts.jpg",
       rating: 4.9
     }
   },
@@ -28,10 +29,10 @@ const SLIDES = [
     title: "Workshops",
     subtitle: "2026 · Jaipur",
     desc: "Discover ancient lanes, temples and living heritage around Jaipur.",
-    bg: "assets/images/banner/banner_3.jpg",
+    bg: "banner/banner_3.jpg",
     card: {
       title: "Workshops",
-      img: "assets/images/banner/gallery_11.jpg",
+      img: "banner/gallery_11.jpg",
       rating: 4.7
     }
   },
@@ -39,10 +40,10 @@ const SLIDES = [
     title: "Travel circuit",
     subtitle: "2026 · Jaipur",
     desc: "Discover ancient lanes, temples and living heritage around Jaipur.",
-    bg: "assets/images/banner/banner_4.jpg",
+    bg: "banner/banner_4.jpg",
     card: {
       title: "Travel circuit",
-      img: "assets/images/banner/gallery_17.jpg",
+      img: "banner/gallery_17.jpg",
       rating: 4.7
     }
   },
@@ -50,10 +51,10 @@ const SLIDES = [
     title: "Experiences",
     subtitle: "2026 · Jaipur",
     desc: "Discover ancient lanes, temples and living heritage around Jaipur.",
-    bg: "assets/images/banner/banner_5.jpg",
+    bg: "banner/banner_5.jpg",
     card: {
       title: "Experiences",
-      img: "assets/images/banner/gallery_32.jpg",
+      img: "banner/gallery_32.jpg",
       rating: 4.7
     }
   }
@@ -61,7 +62,7 @@ const SLIDES = [
 
 @Component({
   selector: 'app-hero-section',
-  imports: [],
+  imports: [SharedDependencies],
   templateUrl: './hero-section.component.html',
   styleUrl: './hero-section.component.scss',
   providers: [],

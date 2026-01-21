@@ -24,6 +24,7 @@ type Slide = {
   providers: [NgbCarouselConfig]
 })
 export class BannerComponent {
+  banner1 = 'banner/banner_1.jpg';
   slides: Slide[] = [
     {
       title: 'Explore India with Us',
