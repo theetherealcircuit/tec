@@ -13,7 +13,7 @@ import { HttpClient } from '@angular/common/http';
 export class EventFormComponent implements OnInit {
   eventForm!: FormGroup;
   submitted: boolean = false;
-  adminWhatsApp = "91XXXXXXXXXX";  // <-- Replace with your WhatsApp number
+  adminWhatsApp = "7378160496";  // <-- Replace with your WhatsApp number
   googleScriptURL = "https://script.google.com/macros/s/AKfycbyR3wCQExbLMUbt2WaaZdCjmgbR8BmDx2zkXOF8Rp9-gd69Arqm_UcDREIFRB6CbFzB/exec";
   constructor(
     private utilService: UtilsService, private fb: FormBuilder, private http: HttpClient

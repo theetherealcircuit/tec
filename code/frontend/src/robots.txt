@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://theetherealcircuit.com/sitemap.xml
