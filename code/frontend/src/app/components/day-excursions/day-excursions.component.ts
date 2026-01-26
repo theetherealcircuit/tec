@@ -15,7 +15,7 @@ export class DayExcursionsComponent {
   dayExcursions = [
     {
       id: "sambhar",
-      title: "Sambhar Salt Lake",
+      title: "Sambhar",
       shortSummary: "India’s largest inland salt lake with surreal pink horizons and rich ecology.",
       heroImage: "hero.jpg"
     },
@@ -27,19 +27,19 @@ export class DayExcursionsComponent {
     },
     {
       id: "sariska",
-      title: "Sariska National Park",
+      title: "Sariska",
       shortSummary: "More than a tiger reserve—temples, forests, history, and wilderness together.",
       heroImage: "hero.jpg"
     },
     {
       id: "bharatpur",
-      title: "Bharatpur Bird Sanctuary",
+      title: "Bird Sanctuary",
       shortSummary: "Wetland biodiversity and one of the world’s finest bird habitats.",
       heroImage: "hero.jpg"
     },
     {
       id: "ranthambore",
-      title: "Ranthambore Fort & Forest",
+      title: "Ranthambore",
       shortSummary: "Ancient fort architecture meets wildlife-rich forests.",
       heroImage: "hero.jpg"
     },

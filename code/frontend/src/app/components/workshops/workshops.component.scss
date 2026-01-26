@@ -59,16 +59,16 @@ $text-muted: #7A8A6B;
     }
 
     .icon-box {
-        width: 55px;
-        height: 55px;
+        width: 100%;
+        // height: 55px;
         border-radius: 12px;
         display: flex;
         align-items: center;
         justify-content: center;
 
         img {
-            width: 32px;
-            height: 32px;
+            width: 300px;
+            height: 220px;
         }
     }
 

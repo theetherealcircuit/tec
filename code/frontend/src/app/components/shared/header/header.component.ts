@@ -3,8 +3,7 @@ import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
 import { NavigationEnd, Router, RouterModule } from '@angular/router';
 import { EXTERNAL_LINKS } from '../../../services/external-links.service';
 import { UtilsService } from '../../../utils/utils.service';
-import { NgbCarouselConfig, NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
-import { filter } from 'rxjs/operators';
+import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 import { SharedDependencies } from '../shared.dependency';
 
 @Component({
@@ -15,47 +14,42 @@ import { SharedDependencies } from '../shared.dependency';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent implements OnInit {
+
   isScrolled = false;
   externalLinks = EXTERNAL_LINKS;
-  partnerUrls = ['brokers', 'suppliers', 'freight-forwarders', 'institutional-investors'];
-  companyUrls = ['about-us', 'careers', 'blogs', 'contact-us'];
-  currentTab = 'home';
   currentUrl: string = "";
   homeRoute: boolean = true;
 
-  showNavigationArrows = false;
-  showNavigationIndicators = false;
-  // images = [1055, 194, 368].map((n) => `https://picsum.photos/id/${n}/900/500`);
+  hoverTimeout: any = null;
 
-  constructor(private elementRef: ElementRef,
+  constructor(
+    private elementRef: ElementRef,
     private router: Router,
-    private utilsService: UtilsService, config: NgbCarouselConfig
+    private utilsService: UtilsService,
+    config: NgbCarouselConfig
   ) {
     config.showNavigationArrows = true;
     config.showNavigationIndicators = true;
   }
+
+  /*------------------------------------
+    FIXED SCROLL LISTENER
+  ------------------------------------*/
   @HostListener('window:scroll')
   onWindowScroll() {
-    window.addEventListener('scroll', () => {
-      const scrollPosition = window.scrollY;  // Use scrollY for vertical position
-      const headerHeight = this.elementRef.nativeElement.offsetHeight;
+    const scrollPosition = window.scrollY;
+    const headerHeight = this.elementRef.nativeElement.offsetHeight;
 
-      // Adjust threshold based on your desired transition behavior
-      this.isScrolled = scrollPosition > headerHeight;
-    });
+    this.isScrolled = scrollPosition > headerHeight;
   }
 
   ngOnInit() {
     this.currentUrl = this.router.url;
-    console.log(this.currentUrl);
+
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
         this.currentUrl = event.urlAfterRedirects;
-      }
-      if (this.currentUrl == '/home') {
-        this.homeRoute = true;
-      } else {
-        this.homeRoute = false;
+        this.homeRoute = this.currentUrl === '/home';
       }
     });
   }
@@ -63,6 +57,38 @@ export class HeaderComponent implements OnInit {
   openLink(linkType: string) {
     this.utilsService.trackButtonClick();
     this.utilsService.openLink(linkType);
+  }
+
+  mobileDropdown: string | null = null;
+
+  isDesktop() {
+    return window.innerWidth >= 992;
+  }
+
+  toggleMobileDropdown(name: string) {
+    if (this.isDesktop()) return;
+    this.mobileDropdown = this.mobileDropdown === name ? null : name;
+  }
+
+  onDropdownEnter(drop: HTMLElement) {
+    if (!this.isDesktop()) return;
+    clearTimeout(this.hoverTimeout);
+    drop.classList.add('hovered');
+  }
+
+  onDropdownLeave(drop: HTMLElement) {
+    if (!this.isDesktop()) return;
+    this.hoverTimeout = setTimeout(() => {
+      drop.classList.remove('hovered');
+    }, 120);
+  }
+
+  closeMobileMenu() {
+    if (this.isDesktop()) return;
+
+    const nav = document.getElementById('navbarNav');
+    nav?.classList.remove('show');
+    this.mobileDropdown = null; // close accordion dropdown too
   }
 
 }

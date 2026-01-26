@@ -12,6 +12,8 @@ import { AppModule } from './app.dependency';
 })
 export class AppComponent {
   title = 'theindiancircuit';
+  routerUrl = '';
+  hideHeader = false;
 
   constructor(
     private router: Router,
@@ -23,12 +25,14 @@ export class AppComponent {
         this.zone.runOutsideAngular(() => {
           this.utilsService.scrollToTop();
         });
+        this.hideHeader = ev.urlAfterRedirects.includes('/event-regestration');
       }
     });
   }
 
 
   ngOnInit(): void {
-    // this.utilsService.scrollToTop();
+    //this.utilsService.scrollToTop();
+    this.routerUrl = this.router.url;
   }
 }

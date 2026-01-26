@@ -1480,9 +1480,9 @@ header {
         border-top: 1px solid #ccc;
     }
 
-    .nav-item.dropdown:hover .dropdown-menu {
-        display: block;
-    }
+    // .nav-item.dropdown:hover .dropdown-menu {
+    //     display: block;
+    // }
 }
 
 .fixedtop {
@@ -1572,8 +1572,13 @@ header {
 }
 
 .navbar-brand img {
-    width: 190px;
-    height: 100px;
+    width: 100%;
+    height: 120px;
+}
+
+.navbar-brand .scrolled {
+    width: 190px !important;
+    height: 100px !important;
 }
 
 
@@ -3302,6 +3307,41 @@ Media Query
     }
 }
 
+@media (min-width: 992px) {
+    .dropdown.hovered .dropdown-menu {
+        display: block !important;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@media (max-width: 991px) {
+    .dropdown-menu {
+        display: none !important;
+        position: static !important;
+        background: rgba(0, 0, 0, 0.95) !important;
+        padding-left: 16px;
+    }
+
+    .dropdown-menu.show {
+        display: block !important;
+    }
+
+    .nav-link.dropdown-toggle::after {
+        transform: rotate(0);
+        transition: 0.3s;
+    }
+
+    .nav-link.dropdown-toggle.active::after {
+        transform: rotate(180deg);
+    }
+
+    header,
+    .navbar-collapse {
+        background: rgba(0, 0, 0, 0.95) !important;
+    }
+}
+
 @media (min-width :769px) and (max-width: 992px) {
 
     .fixedtop .login,
@@ -3320,10 +3360,109 @@ Media Query
     .onscroll .login {
         width: 40%;
     }
+
+    header {
+        background: rgba(0, 0, 0, 0.85) !important;
+        backdrop-filter: blur(10px);
+    }
+
+    header,
+    header.onscroll,
+    header.fixedtop,
+    header.headerbg {
+        background: rgba(0, 0, 0, 0.92) !important;
+        backdrop-filter: blur(12px);
+    }
+
+    .navbar,
+    .navbar-collapse.show {
+        background: rgba(0, 0, 0, 0.92) !important;
+    }
+
+    /* dropdown background */
+    .dropdown-menu {
+        background: rgba(0, 0, 0, 0.95) !important;
+    }
+
+    .dropdown-item {
+        color: #fff !important;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: block !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+
+    /* Dropdown background */
+    .navbar-collapse {
+        background: rgba(0, 0, 0, 0.92);
+        padding: 10px 0;
+    }
+
+    .dropdown-menu {
+        position: static !important;
+        float: none !important;
+    }
+
+    .navbar-brand img {
+        width: 80px;
+        height: 50px;
+    }
+
+    .event-modal-wrapper {
+        align-items: flex-start;
+        /* modal starts from top */
+    }
+
+    .event-modal {
+        border-radius: 16px;
+        padding: 40px 25px !important;
+        max-width: 100%;
+        min-height: 90vh;
+        width: 100%;
+    }
+
+    .close-btn {
+        font-size: 10px;
+    }
+
+    .mandala-bg {
+        background-size: 160% !important;
+        display: none;
+    }
+
+    .event-main-title {
+        font-size: 2rem;
+    }
+
+    .event-subheading {
+        font-size: 1.2rem;
+    }
+
+    .event-tagline {
+        font-size: 1rem;
+    }
+
+    .countdown {
+        gap: 12px;
+    }
+
+    .countdown .box {
+        min-width: 60px;
+        padding: 8px;
+    }
+
+    .countdown .box span {
+        font-size: 1.4rem;
+    }
+
+    .view-btn {
+        width: 100%;
+        text-align: center;
+    }
 }
 
-
-@media only screen and (min-width: 481px) and (max-width: 767px) {}
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px) {
@@ -3348,6 +3487,35 @@ Media Query
 @media only screen and (max-width: 480px) {
     .navbar-brand {
         margin-right: 0;
+    }
+
+    .event-modal {
+        padding: 34px 22px;
+    }
+
+    .event-main-title {
+        font-size: 1.8rem;
+    }
+
+    .event-subheading {
+        font-size: 1rem;
+    }
+
+    .event-tagline {
+        font-size: 0.85rem;
+    }
+
+    .countdown .box {
+        min-width: 52px;
+        padding: 8px 10px;
+    }
+
+    .countdown .box span {
+        font-size: 1.2rem;
+    }
+
+    .countdown small {
+        font-size: 0.7rem;
     }
 }
 

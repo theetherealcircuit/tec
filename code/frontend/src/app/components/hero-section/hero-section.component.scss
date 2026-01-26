@@ -15,6 +15,10 @@
     z-index: -1;
 }
 
+.mirror {
+    transform: scaleX(-1);
+}
+
 /* ---------------- LEFT HERO CONTENT ---------------- */
 .hero-content {
     position: absolute;
@@ -122,5 +126,186 @@
         height: 430px;
         transform: scale(1);
         z-index: 10;
+    }
+}
+
+
+/* ============================================================
+   🔥 TABLET (max-width: 1024px)
+   Maintain two-column layout but scale intelligently
+============================================================ */
+@media (max-width: 1024px) {
+
+    .hero-content {
+        left: 4%;
+        width: 50%;
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        h3 {
+            font-size: 1.4rem;
+        }
+
+        p {
+            font-size: 1rem;
+            width: 90%;
+        }
+
+        .cta-btn {
+            font-size: 1rem;
+            padding: 12px 24px;
+        }
+    }
+
+    .card-swiper {
+        right: 2%;
+        width: 40%;
+
+        .card,
+        .card.active {
+            height: 350px !important;
+        }
+
+        .card-content h3 {
+            font-size: 20px;
+        }
+    }
+}
+
+
+
+/* ============================================================
+   📱 MOBILE (max-width: 768px)
+   Single card + centered + hero text spacing fix
+============================================================ */
+
+@media (max-width: 768px) {
+
+    .hero-wrapper {
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    .background-wrapper {
+        height: 100vh;
+        background-position: center;
+    }
+
+    /* HERO CONTENT — FIX OVERLAPPING WITH HEADER */
+    .hero-content {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+
+        padding: 120px 20px 7px;
+        /* 🔥 Top padding added */
+        width: 100%;
+        text-align: center;
+
+        h1 {
+            font-size: 2.4rem;
+            line-height: 1.2;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+        }
+
+        p {
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+
+        .cta-btn {
+            margin-top: 20px;
+            width: 100%;
+            padding: 12px;
+            font-size: 1rem;
+        }
+    }
+
+
+    /* SWIPER — SINGLE CARD + CENTERED */
+    .card-swiper {
+        position: relative;
+        margin-top: 40px;
+
+        width: 100%;
+        padding: 0 20px;
+        transform: none;
+        top: auto;
+        right: auto;
+        left: auto;
+
+        /* Only ONE card visible */
+        swiper-container {
+            width: 100% !important;
+            height: auto !important;
+        }
+
+        .swiper-slide {
+            display: flex !important;
+            justify-content: center !important;
+            /* 🔥 force center */
+            width: 100% !important;
+        }
+
+        .card {
+            width: 80%;
+            height: 300px !important;
+            transform: scale(1) !important;
+            opacity: 0.7;
+            transition: 0.3s ease;
+        }
+
+        /* ACTIVE card always centered + full size */
+        .card.active {
+            width: 85%;
+            height: 320px !important;
+            opacity: 1;
+            transform: scale(1.03) !important;
+            z-index: 10;
+        }
+
+        .card-content h3 {
+            font-size: 18px;
+        }
+    }
+}
+
+
+/* ============================================================
+   📱 SMALL MOBILE (max-width: 480px)
+============================================================ */
+@media (max-width: 480px) {
+
+    .hero-content {
+        padding-top: 80px;
+        /* extra top gap for small screens */
+
+        h1 {
+            font-size: 1.9rem;
+        }
+
+        h3 {
+            font-size: 1.05rem;
+        }
+
+        p {
+            font-size: 0.95rem;
+        }
+    }
+
+    .card-swiper .card {
+        width: 90%;
+        height: 260px !important;
+    }
+
+    .card-swiper .card.active {
+        width: 95%;
+        height: 280px !important;
     }
 }

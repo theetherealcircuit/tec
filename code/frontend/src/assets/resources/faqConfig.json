@@ -80,16 +80,6 @@
         ]
     },
     {
-        "id": 8,
-        "question": "Can schools or colleges collaborate with you?",
-        "answer": "Yes — we love to co-create. We design circuits with educators that go far beyond classrooms — skill-building, heritage walks, eco-workshops, community actions.",
-        "tags": [
-            "home",
-            "education",
-            "collaboration"
-        ]
-    },
-    {
         "id": 9,
         "question": "How long are your circuits?",
         "answer": "From 1-day immersions to 10-day odysseys. Each circuit flows with the land, the story, and the soul of the place.",
@@ -97,16 +87,6 @@
             "home",
             "travel",
             "duration"
-        ]
-    },
-    {
-        "id": 10,
-        "question": "Is TEC a sustainable travel company?",
-        "answer": "We go beyond sustainability. We believe in regeneration — healing what’s broken, reviving what’s fading, honoring what’s ancient.",
-        "tags": [
-            "home",
-            "sustainability",
-            "impact"
         ]
     },
     {

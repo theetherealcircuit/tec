@@ -297,3 +297,15 @@ gsap.utils.toArray(".community-card").forEach((card, i) => {
 });
 
 
+
+/* ============================================
+   RESPONSIVE FIX: disable heavy scroll animations on mobile
+   ============================================ */
+if (window.innerWidth < 768) {
+    ScrollTrigger.getAll().forEach(st => st.kill());
+
+    // Remove horizontal scroll transforms
+    const exp = document.querySelector(".exp-horizontal");
+    if (exp) exp.style.transform = "none";
+}
+

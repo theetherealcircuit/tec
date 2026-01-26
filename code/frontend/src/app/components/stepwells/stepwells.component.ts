@@ -11,7 +11,7 @@ const stepwells = [
     highlights: [
       "3,500 steps in perfect symmetry",
       "One of India's deepest stepwells",
-      "11th-century architectural marvel",
+      "9th-century architectural marvel",
       "Harshat Mata Temple nearby"
     ]
   },
@@ -19,7 +19,7 @@ const stepwells = [
   {
     id: "hadi-rani-stepwell",
     title: "Hadi Rani ki Baori",
-    location: "Todabhim, Karauli District",
+    location: "Todaraisingh, Tonk District",
     image: "hadi-rani.jpg",
     description: `Hadi Rani ki Baori is often seen as an ornate monument, yet it was once a shared public space where water, ritual, and everyday life came together. Over time, quick visits and photo stops have hidden the thought behind its design. TEC explores the baori through slow, interpretive walks led by architects and heritage practitioners who help participants read its sculptures, shaded corridors, and changing microclimates. Walking down level by level reveals how light, temperature, and sound shaped social use and seasonal access to water. Rather than viewing it from above, participants experience it as it was meant to be used—on foot, in rhythm, and with attention. The baori emerges as a carefully planned structure built for people, climate, and community.`,
     highlights: [

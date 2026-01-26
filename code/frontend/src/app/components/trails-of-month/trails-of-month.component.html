@@ -6,8 +6,8 @@
         </div>
         <div class="row">
             <swiper-container #trailSwiper class="mySwiper" space-between="30" centered-slides="false"
-                autoplay-delay="1000" autoplay-disable-on-interaction="false" class="trail-swiper" slides-per-view="3"
-                (mouseenter)="pauseSwiper()" (mouseleave)="resumeSwiper()">
+                autoplay-delay="2000" autoplay-disable-on-interaction="false" class="trail-swiper"
+                [attr.slides-per-view]="slidesPerView" (mouseenter)="pauseSwiper()" (mouseleave)="resumeSwiper()">
                 @for(card of cards; track card){
                 <swiper-slide>
                     <div class="col-md-12 col-lg-12" (click)="gotoTrail(card)">

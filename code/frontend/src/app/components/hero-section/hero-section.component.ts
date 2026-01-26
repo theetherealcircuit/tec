@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, CUSTOM_ELEMENTS_SCHEMA, ElementRef, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, CUSTOM_ELEMENTS_SCHEMA, ElementRef, HostListener, ViewChild } from '@angular/core';
 import { SharedDependencies } from '../shared/shared.dependency';
 const SLIDES = [
   {
@@ -7,56 +7,61 @@ const SLIDES = [
     desc: "India’s First Regenerative Festival set amidst the cultural heritage of Rajasthan.",
     bg: "banner/banner_1.jpg",
     card: {
-      title: "MFH",
+      title: "MHF",
       img: "banner/menar_event.jpg",
       rating: 4.8
-    }
+    },
+    mirror: false
   },
 
   {
     title: "Heritage Walk",
     subtitle: "Udaipur · Rajasthan",
     desc: "A sacred spiritual site atop the hill, surrounded by stunning landscapes.",
-    bg: "banner/banner_2.JPG",
+    bg: "banner/banner_5.jpg",
     card: {
       title: "Heritage Walk",
       img: "banner/jaipur-forts.jpg",
       rating: 4.9
-    }
+    },
+    mirror: true
   },
 
   {
     title: "Workshops",
     subtitle: "2026 · Jaipur",
     desc: "Discover ancient lanes, temples and living heritage around Jaipur.",
-    bg: "banner/banner_3.jpg",
+    bg: "banner/banner_4.jpg",
     card: {
       title: "Workshops",
       img: "banner/gallery_11.jpg",
       rating: 4.7
-    }
+    },
+    mirror: true
   },
   {
     title: "Travel circuit",
     subtitle: "2026 · Jaipur",
     desc: "Discover ancient lanes, temples and living heritage around Jaipur.",
-    bg: "banner/banner_4.jpg",
+    bg: "banner/banner_3.jpg",
     card: {
       title: "Travel circuit",
       img: "banner/gallery_17.jpg",
       rating: 4.7
-    }
+    },
+    mirror: true
   },
   {
     title: "Experiences",
     subtitle: "2026 · Jaipur",
     desc: "Discover ancient lanes, temples and living heritage around Jaipur.",
-    bg: "banner/banner_5.jpg",
+    bg: "banner/banner_2.JPG",
     card: {
       title: "Experiences",
       img: "banner/gallery_32.jpg",
       rating: 4.7
-    }
+    },
+    mirror: true
   }
 ];
 
@@ -76,13 +81,37 @@ export class HeroSectionComponent implements AfterViewInit {
   activeSlide = SLIDES[0];
   activeIndex = 0;
 
+  slidesPerView = 1;
+
+  ngOnInit() {
+    this.updateSlidesPerView();   // set correct value before init
+  }
+
+  /** 🔥 On screen resize, update slidesPerView dynamically */
+  @HostListener('window:resize')
+  onResize() {
+    this.updateSlidesPerView();
+    this.applySwiperUpdate(); // live update swiper
+  }
+
+  /** 🔥 Detect device width */
+  updateSlidesPerView() {
+    const width = window.innerWidth;
+
+    if (width < 768) {
+      this.slidesPerView = 1;       // mobile
+    } else {
+      this.slidesPerView = 1.5;     // desktop/tablet
+    }
+  }
+
+  /** 🔥 Initialize Swiper AFTER View init */
   ngAfterViewInit() {
     setTimeout(() => {
       const swiperEl = this.cardSwiperRef.nativeElement;
 
-      // Register Swiper Web Component manually
       Object.assign(swiperEl, {
-        slidesPerView: 1.5,
+        slidesPerView: this.slidesPerView,  // dynamic
         loop: true,
         autoplay: {
           delay: 6000,
@@ -95,6 +124,17 @@ export class HeroSectionComponent implements AfterViewInit {
     }, 50);
   }
 
+  /** 🔥 Apply updates to Swiper when slidesPerView changes */
+  applySwiperUpdate() {
+    const swiperEl = this.cardSwiperRef?.nativeElement;
+
+    if (swiperEl?.swiper) {
+      swiperEl.swiper.params.slidesPerView = this.slidesPerView;
+      swiperEl.swiper.update();
+    }
+  }
+
+  /** 🔥 Track active card */
   onSlideChange() {
     const swiper = this.cardSwiperRef.nativeElement.swiper;
     if (!swiper) return;
@@ -104,4 +144,5 @@ export class HeroSectionComponent implements AfterViewInit {
     this.activeIndex = index;
     this.activeSlide = this.slides[index];
   }
+
 }

@@ -11,7 +11,7 @@
         <div class="workshop-card" *ngFor="let w of workshops" [style.borderColor]="w.color">
 
             <div class="icon-box" [style.background]="w.color + '22'">
-                <img [src]="w.icon | mediaUrl" />
+                <img [src]="w.banner | mediaUrl" />
             </div>
 
             <h3>{{ w.title }}</h3>

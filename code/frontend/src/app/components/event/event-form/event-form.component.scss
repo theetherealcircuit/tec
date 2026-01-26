@@ -1,0 +1,131 @@
+/* -------------------------
+   COLOR SYSTEM (YOUR PALETTE)
+-------------------------- */
+
+$primary: #B7D3A8; // Sage Green
+$secondary: #D18C56; // Amber Gold
+$tertiary: #B3C77C; // Soft Olive
+
+$accent-1: #9C8365; // Warm Taupe
+$accent-2: #E1D79B; // Pale Cream
+$accent-3: #F1EBDB; // Ivory Mist
+
+$text-dark: #3E4C3A; // Mossy Gray
+$text-default: #4E5B3A; // Olive Brown
+$text-muted: #7A8A6B; // Soft Sage
+$text-light: #F8F8F3; // Powder White
+
+$bg-light: #F7F2E6; // Sunlit Beige
+$bg-lavender: #D9D4B8; // Misty Olive
+$bg-contrast: #E7E2C4; // Light Sand
+$bg-dark: #2F3C29; // Deep Pine
+$bg-soft-sage: #EAF0DC; // Soft Sage BG
+
+$border-light: #D0D0C0;
+$border-soft: #B7A68E;
+$border-accent: #8C6A46;
+
+$link-color: #7D9D6A;
+$link-hover: #D18C56;
+
+/* -------------------------
+   FORM CONTAINER DESIGN
+-------------------------- */
+
+.event-form {
+    max-width: 480px;
+    margin: 40px auto;
+    padding: 32px;
+    border-radius: 18px;
+
+    background: $bg-light;
+
+    /* Subtle textured background */
+    background-image: url('/assets/textures/paper-texture.png');
+    background-size: cover;
+    background-blend-mode: soft-light;
+
+    border: 2px solid $border-soft;
+
+    /* Title */
+    .form-title {
+        text-align: center;
+        font-size: 28px;
+        font-weight: 700;
+        color: $accent-1;
+        margin-bottom: 20px;
+    }
+
+    /* Labels + Inputs */
+    .form-group {
+        margin-bottom: 22px;
+
+        label {
+            font-size: 14px;
+            font-weight: 600;
+            color: $text-dark;
+            margin-bottom: 6px;
+            display: block;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 14px;
+            font-size: 15px;
+            border-radius: 12px;
+
+            background: $accent-3;
+            border: 2px solid $border-light;
+            color: $text-default;
+
+            transition: 0.25s ease;
+
+            &:focus {
+                background: $accent-2;
+                border-color: $secondary;
+                outline: none;
+                color: $text-dark;
+            }
+        }
+
+        .error {
+            font-size: 12px;
+            margin-top: 4px;
+            color: #b91c1c;
+        }
+    }
+
+    /* Submit Button */
+    .submit-btn {
+        width: 100%;
+        padding: 14px;
+
+        background: $secondary;
+        color: $text-light;
+        font-size: 17px;
+        font-weight: 600;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: 0.25s ease;
+
+        &:hover {
+            background: $accent-1;
+            color: $text-light;
+        }
+
+        &:disabled {
+            background: #aaa;
+            cursor: not-allowed;
+        }
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .event-form {
+        margin: 20px;
+        padding: 24px;
+    }
+}

@@ -1,7 +1,8 @@
 <div class="hero-wrapper">
 
     <!-- Background -->
-    <div class="background-wrapper" [style.backgroundImage]="'url(' + (activeSlide.bg | mediaUrl )+ ')'">
+    <div class="background-wrapper" [style.backgroundImage]="'url(' + (activeSlide.bg | mediaUrl )+ ')'"
+        [ngClass]="{'mirror':activeSlide.mirror}">
     </div>
     <!-- Left Content -->
     <div class="hero-content">
@@ -12,9 +13,9 @@
     </div>
 
     <!-- Card Swiper -->
-    <swiper-container init="false" slides-per-view="1.5" loop="true" autoplay="true" autoplay-delay="6000"
-        autoplay-disable-on-interaction="false" speed="200" #cardSwiper (slidechange)="onSlideChange()"
-        class="card-swiper">
+    <swiper-container init="false" [attr.slides-per-view]="slidesPerView" loop="true" autoplay="true"
+        autoplay-delay="6000" autoplay-disable-on-interaction="false" speed="200" #cardSwiper
+        (slidechange)="onSlideChange()" class="card-swiper">
 
         @for (slide of slides; track slide; let i = $index) {
         <swiper-slide>
