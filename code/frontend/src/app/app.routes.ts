@@ -16,6 +16,7 @@ import { DetailComponent } from './components/day-excursions/detail/detail.compo
 import { StepwellsComponent } from './components/stepwells/stepwells.component';
 import { WorkshopsComponent } from './components/workshops/workshops.component';
 import { EventFormComponent } from './components/event/event-form/event-form.component';
+import { AdminUsersComponent } from './components/admin-users/admin-users.component';
 
 export const routes: Routes = [
     {
@@ -88,6 +89,10 @@ export const routes: Routes = [
     {
         path: 'event-regestration',
         component: EventFormComponent
+    },
+    {
+        path: 'admin',
+        component: AdminUsersComponent
     },
     {
         path: '**',

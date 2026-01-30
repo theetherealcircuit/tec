@@ -1,7 +1,15 @@
 <div class="contact-us">
+    <div id="liveAlertPlaceholder">
+        @if (alertMessage) {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            {{ alertMessage }}
+            <button type="button" class="btn-close" (click)="alertMessage = ''"></button>
+        </div>
+        }
+    </div>
+
     <div class="col-12">
         <div class="event-form py-5">
-
             <h2 class="form-title">Event Registration</h2>
 
             <form [formGroup]="eventForm" (ngSubmit)="register()">
@@ -11,27 +19,48 @@
                     <label>Full Name</label>
                     <input type="text" formControlName="fullName" placeholder="Enter your full name">
                     <small class="error"
-                        *ngIf="eventForm.get('fullName')?.touched && eventForm.get('fullName')?.invalid">
-                        Name is required
+                        *ngIf="eventForm.get('fullName')?.touched && eventForm.get('fullName')?.errors">
+                        <span *ngIf="eventForm.get('fullName')?.errors?.['required']">
+                            Name is required
+                        </span>
+                        <span *ngIf="eventForm.get('fullName')?.errors?.['minlength']">
+                            Minimum 2 characters required
+                        </span>
+                        <span *ngIf="eventForm.get('fullName')?.errors?.['pattern']">
+                            Only letters allowed
+                        </span>
                     </small>
+
                 </div>
 
                 <!-- PHONE -->
                 <div class="form-group">
                     <label>Phone Number</label>
                     <input type="tel" formControlName="phone" placeholder="10-digit phone number">
-                    <small class="error" *ngIf="eventForm.get('phone')?.touched && eventForm.get('phone')?.invalid">
-                        Enter a valid 10-digit phone number
+                    <small class="error" *ngIf="eventForm.get('phone')?.touched && eventForm.get('phone')?.errors">
+                        <span *ngIf="eventForm.get('phone')?.errors?.['required']">
+                            Phone number is required
+                        </span>
+                        <span *ngIf="eventForm.get('phone')?.errors?.['pattern']">
+                            Enter valid Indian mobile number
+                        </span>
                     </small>
+
                 </div>
 
                 <!-- CITY -->
                 <div class="form-group">
                     <label>Email</label>
                     <input type="text" formControlName="email" placeholder="Enter your email">
-                    <small class="error" *ngIf="eventForm.get('city')?.touched && eventForm.get('email')?.invalid">
-                        Email is required
+                    <small class="error" *ngIf="eventForm.get('email')?.touched && eventForm.get('email')?.errors">
+                        <span *ngIf="eventForm.get('email')?.errors?.['required']">
+                            Email is required
+                        </span>
+                        <span *ngIf="eventForm.get('email')?.errors?.['email']">
+                            Enter a valid email address
+                        </span>
                     </small>
+
                 </div>
 
                 <!-- EVENT DROPDOWN -->
@@ -44,6 +73,7 @@
                     <small class="error" *ngIf="eventForm.get('event')?.touched && eventForm.get('event')?.invalid">
                         Please select an event
                     </small>
+
                 </div>
 
                 <!-- SUBMIT -->
@@ -55,3 +85,4 @@
         </div>
     </div>
 </div>
+<iframe name="hidden_iframe" style="display:none;"></iframe>

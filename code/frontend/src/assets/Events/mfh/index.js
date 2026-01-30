@@ -309,3 +309,52 @@ if (window.innerWidth < 768) {
     if (exp) exp.style.transform = "none";
 }
 
+/* ============================================
+   HERO BIRD FLIGHT ANIMATION
+   Starts from top-right → flies to Register button
+============================================ */
+
+function flyBirdToRegister() {
+
+    if (window.innerWidth < 768) return; // disable on mobile
+
+    const bird = document.querySelector(".hero-flying-bird");
+    const btn = document.querySelector(".reg-btn");
+    const hero = document.querySelector(".main-hero");
+
+    if (!bird || !btn || !hero) return;
+
+    const btnRect = btn.getBoundingClientRect();
+    const heroRect = hero.getBoundingClientRect();
+
+    const targetX = btnRect.left - heroRect.left;
+    const targetY = btnRect.top - heroRect.top;
+
+    gsap.set(bird, {
+        x: 0,
+        y: 0,
+        opacity: 1,
+        rotation: -20,
+        scale: 0.9
+    });
+
+    gsap.to(bird, {
+        x: targetX - 60,
+        y: targetY,
+        rotation: 10,
+        scale: 1,
+        duration: 4,
+        ease: "power1.inOut",
+        onComplete: () => {
+            gsap.to(bird, {
+                opacity: 0,
+                duration: 0.6
+            });
+        }
+    });
+}
+
+/* Run bird occasionally */
+setInterval(() => {
+    flyBirdToRegister();
+}, 12000); // every 12 seconds

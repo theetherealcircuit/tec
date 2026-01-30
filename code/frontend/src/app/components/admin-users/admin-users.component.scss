@@ -1,0 +1,200 @@
+$primary: #B7D3A8;
+$secondary: #D18C56;
+$accent-1: #9C8365;
+$accent-3: #F1EBDB;
+
+$text-dark: #3E4C3A;
+$bg-light: #F7F2E6;
+$border-soft: #B7A68E;
+$accent-2: #E1D79B;
+$secondary: #D18C56;
+$text-dark: #3E4C3A;
+
+
+.admin-wrapper {
+    padding: 30px;
+    background: $bg-light;
+    min-height: 100vh;
+
+    h2 {
+        color: $accent-1;
+        margin-bottom: 20px;
+    }
+}
+
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+.user-table th {
+    background: $primary;
+    color: $text-dark;
+    padding: 12px;
+    border: 1px solid $border-soft;
+}
+
+.user-table td {
+    padding: 10px;
+    border: 1px solid $border-soft;
+}
+
+select,
+textarea {
+    width: 100%;
+    padding: 6px;
+    border-radius: 6px;
+    border: 1px solid $border-soft;
+    background: $accent-3;
+    color: $text-dark;
+}
+
+select:focus,
+textarea:focus {
+    outline: 2px solid $secondary;
+}
+
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+
+    button {
+        padding: 10px 18px;
+        border: none;
+        cursor: pointer;
+        background: $accent-2;
+        color: $text-dark;
+
+        &.active {
+            background: $secondary;
+            color: white;
+        }
+    }
+}
+
+.update-btn {
+    background: $secondary;
+    color: #F7F2E6;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s ease-in-out;
+    min-width: 80px;
+    text-align: center;
+
+    &:hover {
+        background: darken($secondary, 8%);
+    }
+
+    &:active {
+        transform: scale(0.97);
+    }
+
+    &:disabled {
+        background: $border-soft;
+        cursor: not-allowed;
+    }
+}
+
+/* ===============================
+   TABLE WRAPPER FOR MOBILE SCROLL
+=============================== */
+// .user-table {
+//     display: block;
+//     overflow-x: auto;
+//     white-space: nowrap;
+// }
+
+/* ===============================
+   TABLET STYLING
+=============================== */
+@media (max-width: 992px) {
+
+    .admin-wrapper {
+        padding: 20px;
+    }
+
+    .user-table th,
+    .user-table td {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .tabs {
+        flex-wrap: wrap;
+
+        button {
+            flex: 1;
+            font-size: 14px;
+            padding: 8px 12px;
+        }
+    }
+}
+
+/* ===============================
+   MOBILE VIEW — CARD STYLE
+=============================== */
+@media (max-width: 600px) {
+
+    .user-table thead {
+        display: none;
+    }
+
+    .user-table,
+    .user-table tbody,
+    .user-table tr,
+    .user-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .user-table tr {
+        background: white;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        padding: 10px;
+        border: 1px solid $border-soft;
+    }
+
+    .user-table td {
+        text-align: left;
+        padding: 8px 5px;
+        border: none;
+        position: relative;
+    }
+
+    .user-table td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        color: $accent-1;
+        display: block;
+        margin-bottom: 4px;
+    }
+
+    select,
+    textarea,
+    input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .tabs {
+        flex-direction: column;
+        gap: 8px;
+
+        button {
+            width: 100%;
+            font-size: 15px;
+        }
+    }
+
+    .update-btn {
+        width: 100%;
+        padding: 10px;
+        font-size: 15px;
+    }
+}

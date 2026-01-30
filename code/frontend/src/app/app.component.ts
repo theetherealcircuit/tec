@@ -11,7 +11,7 @@ import { AppModule } from './app.dependency';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'theindiancircuit';
+  title = 'theetherealcircuit';
   routerUrl = '';
   hideHeader = false;
 

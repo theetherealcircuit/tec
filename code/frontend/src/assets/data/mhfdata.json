@@ -1,0 +1,13 @@
+[
+    {
+        "id": 1,
+        "name": "Ravi Sharma",
+        "phone": "9876543210",
+        "email": "ravi@email.com",
+        "event": "Mewar Heritage Festival",
+        "date": "2025-01-30",
+        "status": "Pending",
+        "feedback": "",
+        "contactedBy": ""
+    }
+]

@@ -375,6 +375,7 @@
     animation: floatLeaf 6s ease-in-out infinite;
 }
 
+
 @keyframes floatLeaf {
     0% {
         transform: translateY(0) rotate(0deg);
@@ -397,6 +398,17 @@
     opacity: 0.8;
     animation: floatBird 10s linear infinite;
 }
+
+.hero-flying-bird {
+    position: absolute;
+    top: -60px;
+    right: -80px;
+    width: 60px;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 5;
+}
+
 
 @keyframes floatBird {
     from {
